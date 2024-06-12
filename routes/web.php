@@ -31,3 +31,4 @@ Route::get('/refuges', function () {
 Route::get('/legislations', function () {
     return view('legislations');
 });
+

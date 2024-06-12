@@ -21,3 +21,10 @@ createInertiaApp({
         color: '#4B5563',
     },
 });
+
+import { createApp } from 'vue';
+import Welcome from './components/welcome.vue';
+
+const app = createApp({});
+app.component('welcome', Welcome);
+app.mount('#app');
