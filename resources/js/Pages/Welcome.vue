@@ -49,11 +49,7 @@ function handleImageError() {
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between py-3">
                 <div class="flex items-center">
-                    <button class="navbar-burger flex items-center text-white p-3">
-                        <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20">
-                            <path d="M0 3h20v2H0zM0 9h20v2H0zM0 15h20v2H0z" />
-                        </svg>
-                    </button>
+
                     <a class="ml-4" href="#"><img src="View/assets/images/logo.png" alt="Progressus HTML5 template" class="h-8"></a>
                 </div>
                 <div class="hidden md:flex md:items-center">
