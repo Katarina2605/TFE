@@ -32,3 +32,6 @@ Route::get('/legislations', function () {
     return view('legislations');
 });
 
+Route::get('/index', function () {
+    return view('index');
+});

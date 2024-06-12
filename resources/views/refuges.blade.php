@@ -44,7 +44,7 @@
       </div>
       <div class="hidden md:flex md:items-center">
         <ul class="flex space-x-6">
-          <li><a href="/welcome" class="hover:underline">Accueil</a></li>
+          <li><a href="/index" class="hover:underline">Accueil</a></li>
           <li><a href="/refuges" class="hover:underline">Refuges</a></li>
           <li><a href="/legislations" class="hover:underline">Législations</a></li>
           <li><a href="/contact" class="hover:underline">Contact</a></li>
@@ -62,7 +62,7 @@
 <div class="container mx-auto px-4 py-8">
 
   <ol class="breadcrumb flex space-x-2">
-    <li><a href="../index.php" class="hover:underline text-blue-600">Accueil</a></li>
+    <li><a href="index" class="hover:underline text-blue-600">Accueil</a></li>
     <li class="text-gray-600">/ Refuges</li>
   </ol>
 

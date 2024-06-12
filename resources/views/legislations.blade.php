@@ -34,11 +34,11 @@
             </div>
             <div class="hidden md:flex md:items-center">
                 <ul class="flex space-x-6">
-                    <a href="{{ url('/welcome') }}" class="hover:underline">Accueil</a>
-                    <li><a href="refuges" class="hover:underline">Refuges</a></li>
-                    <li><a href="legislations" class="hover:underline">Législations</a></li>
-                    <li><a href="contact" class="hover:underline">Contact</a></li>
-                    <li><a class="btn bg-blue-500 text-white px-3 py-2 rounded-md" href="register">S'inscrire</a></li>
+                    <li><a href="/index" class="hover:underline">Accueil</a></li>
+                    <li><a href="/refuges" class="hover:underline">Refuges</a></li>
+                    <li><a href="/legislations" class="hover:underline">Législations</a></li>
+                    <li><a href="/contact" class="hover:underline">Contact</a></li>
+                    <li><a class="btn bg-blue-500 text-white px-3 py-2 rounded-md" href="/register">S'inscrire</a></li>
                 </ul>
             </div>
         </div>
@@ -52,7 +52,7 @@
 
     <nav class="bg-white py-3 rounded mb-4 shadow">
         <ol class="list-reset flex">
-            <li><a href="../index.php" class="text-blue-500">Accueil</a></li>
+            <li><a href="index" class="text-blue-500">Accueil</a></li>
             <li class="text-gray-500 mx-2">/</li>
             <li class="text-gray-500">Législations</li>
         </ol>
@@ -143,7 +143,7 @@
             <div class="flex flex-wrap justify-between">
                 <div class="w-full md:w-1/2">
                     <p class="text-sm">
-                        <a href="index" class="hover:underline">Accueil</a> |
+                        <a href="#" class="hover:underline">Accueil</a> |
                         <a href="contact" class="hover:underline">Contact</a> |
                         <a href="legislations" class="hover:underline">Legislation</a> |
                         <a href="refuges" class="hover:underline">Refuges</a> |
@@ -157,11 +157,11 @@
                         Copyright &copy; 2022, Katarina. Template créé par <a href="http://gettemplate.com/" class="text-blue-500 hover:underline" rel="designer">gettemplate</a>
                     </p>
                 </div>
-
             </div>
         </div>
     </div>
 </footer>
+
 
 </body>
 
