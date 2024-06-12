@@ -56,8 +56,8 @@ function handleImageError() {
                 <div class="hidden md:flex md:items-center">
                     <ul class="flex space-x-6">
                         <li class="active"><a href="#" class="hover:underline">Accueil</a></li>
-                        <li><a href="View/refuges.php" class="hover:underline">Refuges</a></li>
-                        <li><a href="View/legislation.php" class="hover:underline">Législations</a></li>
+                        <li><a href="refuges" class="hover:underline">Refuges</a></li>
+                        <li><a href="legislations" class="hover:underline">Législations</a></li>
                         <li><a href="View/contact.php" class="hover:underline">Contact</a></li>
                         <li><a class="btn bg-blue-500 text-white px-3 py-2 rounded-md" href="register">S'inscrire</a></li>
                     </ul>

@@ -11,6 +11,7 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
+
 });
 
 Route::middleware([
@@ -21,4 +22,12 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
+});
+
+Route::get('/refuges', function () {
+    return view('refuges');
+});
+
+Route::get('/legislations', function () {
+    return view('legislations');
 });
