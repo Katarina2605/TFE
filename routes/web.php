@@ -35,3 +35,11 @@ Route::get('/legislations', function () {
 Route::get('/index', function () {
     return view('index');
 });
+
+Route::get('/mentions', function () {
+    return view('mentions');
+});
+
+Route::get('/credits', function () {
+    return view('credits');
+});
