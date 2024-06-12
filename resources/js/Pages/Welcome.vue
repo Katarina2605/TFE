@@ -2,70 +2,67 @@
 import { Head, Link } from '@inertiajs/vue3';
 
 defineProps({
-    canLogin: {
-        type: Boolean,
-    },
-    canRegister: {
-        type: Boolean,
-    },
-    laravelVersion: {
-        type: String,
-        required: true,
-    },
-    phpVersion: {
-        type: String,
-        required: true,
-    },
+  isLoggedIn: {
+    type: Boolean,
+    required: true,
+  },
 });
 
-function handleImageError() {
-    document.getElementById('screenshot-container')?.classList.add('!hidden');
-    document.getElementById('docs-card')?.classList.add('!row-span-1');
-    document.getElementById('docs-card-content')?.classList.add('!flex-row');
-    document.getElementById('background')?.classList.add('!hidden');
-}
 </script>
 
-
 <template>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
 
-        <title>Respons'adopt</title>
+    <title>Respons'adopt</title>
 
-      <link rel="shortcut icon" href="https://www.zupimages.net/up/24/24/a9t8.png">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    </head>
+    <link rel="shortcut icon" href="https://www.zupimages.net/up/24/24/a9t8.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
 
-    <body class="home bg-gray-100 font-sans text-justify">
-    <!-- Fixed navbar -->
-    <div class="fixed top-0 w-full bg-gray-800 text-white shadow-lg z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between py-3">
-                <div class="flex items-center">
-                  <a class="ml-4" href="#">
-                    <img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt logo" class="h-12">
-                  </a>
-                </div>
-                <div class="hidden md:flex md:items-center">
-                    <ul class="flex space-x-6">
-                        <li class="active"><a href="#" class="hover:underline">Accueil</a></li>
-                        <li><a href="refuges" class="hover:underline">Refuges</a></li>
-                        <li><a href="legislations" class="hover:underline">Législations</a></li>
-                        <li><a href="contact.php" class="hover:underline">Contact</a></li>
-                        <li><a class="btn bg-blue-500 text-white px-3 py-2 rounded-md" href="register">S'inscrire</a></li>
-                    </ul>
-                </div>
-            </div>
+  <body class="home bg-gray-100 font-sans text-justify">
+  <!-- Fixed navbar -->
+  <div class="fixed top-0 w-full bg-gray-800 text-white shadow-lg z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-3">
+        <div class="flex items-center">
+          <a class="ml-4" href="#">
+            <img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt logo" class="h-12">
+          </a>
         </div>
+        <div class="hidden md:flex md:items-center">
+          <ul class="flex space-x-6">
+            <li class="active"><a href="#" class="hover:underline">Accueil</a></li>
+            <li><a href="refuges" class="hover:underline">Refuges</a></li>
+            <li><a href="legislations" class="hover:underline">Législations</a></li>
+            <li><a href="contact.php" class="hover:underline">Contact</a></li>
+
+            <!-- Utilisation de la directive v-if pour conditionner l'affichage -->
+            <template v-if="isLoggedIn">
+              <li><a class="btn bg-blue-500 text-white px-3 py-2 rounded-md" href="dashboard">Dashboard</a></li>
+            </template>
+
+            <template v-else>
+              <!-- Redirection vers la page d'inscription -->
+              <li><a class="btn bg-blue-500 text-white px-3 py-2 rounded-md" href="register">S'inscrire</a></li>
+            </template>
+
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- /.navbar -->
+  </div>
+
+
+
+
+<!-- /.navbar -->
 
     <!-- Header -->
     <header id="head" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://zupimages.net/up/24/24/4bqg.jpg');">
