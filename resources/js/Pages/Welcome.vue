@@ -40,10 +40,10 @@ function handleImageError() {
 
       <link rel="shortcut icon" href="https://www.zupimages.net/up/24/24/a9t8.png">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
 
-    <body class="home bg-gray-100 font-sans">
+    <body class="home bg-gray-100 font-sans text-justify">
     <!-- Fixed navbar -->
     <div class="fixed top-0 w-full bg-gray-800 text-white shadow-lg z-50">
         <div class="container mx-auto px-4">
@@ -90,44 +90,44 @@ function handleImageError() {
         <div class="container mx-auto">
             <h3 class="text-center text-2xl font-semibold">Les raisons de faire appel à nous</h3>
 
-            <div class="flex flex-wrap mt-8">
-                <div class="w-full md:w-1/4 p-4">
-                    <div class="bg-white shadow-md rounded-md p-6 text-center">
-                        <div class="text-blue-500 mb-4">
-                          <i class="fa fa-location-arrow fa-2xl" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="font-semibold">Proche de chez vous</h4>
-                        <p class="mt-2">Grâce à nôtre page "refuges", vous aurez la possibilité de consulter les différents refuges présents au sein de la Wallonie pour pouvoir trouver facilement le refuge qui sera le plus proche de chez vous.</p>
-                    </div>
+          <div class="flex flex-wrap mt-8">
+            <div class="w-full md:w-1/4 p-4 flex-grow">
+              <div class="bg-white shadow-md rounded-md p-6 text-center h-full">
+                <div class="text-blue-500 mb-4">
+                  <i class="fa fa-location-arrow fa-2xl" aria-hidden="true"></i>
                 </div>
-                <div class="w-full md:w-1/4 p-4">
-                    <div class="bg-white shadow-md rounded-md p-6 text-center">
-                        <div class="text-blue-500 mb-4">
-                          <i class="fa fa-plus fa-2x"></i>
-                        </div>
-                        <h4 class="font-semibold">Responsable</h4>
-                        <p class="mt-2">Une adoption se doit d'être un acte responsable. Via l'onglet "Législations", nous vous proposons de prendre connaissance des diverses lois qui sont d'application.</p>
-                    </div>
+                <h4 class="font-semibold">Proche de chez vous</h4>
+                <p class="mt-2">Grâce à notre page "refuges", vous aurez la possibilité de consulter les différents refuges présents au sein de la Wallonie pour pouvoir trouver facilement le refuge qui sera le plus proche de chez vous.</p>
+              </div>
+            </div>
+            <div class="w-full md:w-1/4 p-4 flex-grow">
+              <div class="bg-white shadow-md rounded-md p-6 text-center h-full">
+                <div class="text-blue-500 mb-4">
+                  <i class="fa fa-plus fa-2x"></i>
                 </div>
-                <div class="w-full md:w-1/4 p-4">
-                    <div class="bg-white shadow-md rounded-md p-6 text-center">
-                        <div class="text-blue-500 mb-4">
-                            <i class="fa fa-heart fa-2x"></i>
-                        </div>
-                        <h4 class="font-semibold">L'amour des animaux</h4>
-                        <p class="mt-2">Un animal est un engagement qui durera le long de sa vie mais qui vous donnera beaucoup d'amour. Un animal, c'est un être humain à part entière et une adoption doit se prendre très au sérieux. Nous voulons vous aider à faire les choses au mieux.</p>
-                    </div>
+                <h4 class="font-semibold">Responsable</h4>
+                <p class="mt-2">Une adoption se doit d'être un acte responsable. Via l'onglet "Législations", nous vous proposons de prendre connaissance des diverses lois qui sont d'application.</p>
+              </div>
+            </div>
+            <div class="w-full md:w-1/4 p-4 flex-grow">
+              <div class="bg-white shadow-md rounded-md p-6 text-center h-full">
+                <div class="text-blue-500 mb-4">
+                  <i class="fa fa-heart fa-2x"></i>
                 </div>
-                <div class="w-full md:w-1/4 p-4">
-                    <div class="bg-white shadow-md rounded-md p-6 text-center">
-                        <div class="text-blue-500 mb-4">
-                          <i class="fa fa-handshake fa-2x" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="font-semibold">Aider à sauver les animaux</h4>
-                        <p class="mt-2">Chaque année, beaucoup d'animaux subissent un abandon. Pourtant, sauver un animal équivaut à en sauver deux : un qui trouvera un nid douillet à vie et l'autre qui aura une place libre dans un refuge.</p>
-                    </div>
+                <h4 class="font-semibold">L'amour des animaux</h4>
+                <p class="mt-2">Un animal est un engagement qui durera le long de sa vie mais qui vous donnera beaucoup d'amour. C'est un être humain à part entière et une adoption doit se prendre très au sérieux.</p>
+              </div>
+            </div>
+            <div class="w-full md:w-1/4 p-4 flex-grow">
+              <div class="bg-white shadow-md rounded-md p-6 text-center h-full">
+                <div class="text-blue-500 mb-4">
+                  <i class="fa fa-handshake fa-2x" aria-hidden="true"></i>
                 </div>
-            </div> <!-- /row  -->
+                <h4 class="font-semibold">Aider à sauver les animaux</h4>
+                <p class="mt-2">Chaque année, beaucoup d'animaux subissent un abandon. Pourtant, sauver un animal équivaut à en sauver deux : un qui trouvera un nid douillet à vie et l'autre qui aura une place libre dans un refuge.</p>
+              </div>
+            </div>
+          </div> <!-- /row  -->
         </div>
     </div>
     <!-- /Highlights -->
@@ -193,14 +193,14 @@ function handleImageError() {
                     </div>
                 </div>
                 <div class="w-full md:w-1/3 px-4">
-                    <h3 class="text-lg font-semibold">Follow me</h3>
+                    <h3 class="text-lg font-semibold">Retrouvez-moi...</h3>
                     <div class="mt-4">
-                        <div class="flex space-x-4">
-                            <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                            <a href="#"><i class="fa fa-dribbble fa-2x"></i></a>
-                            <a href="#"><i class="fa fa-github fa-2x"></i></a>
-                            <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                        </div>
+                      <div class="flex space-x-4">
+                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+                      </div>
                     </div>
                 </div>
                 <div class="w-full md:w-1/3 px-4">
