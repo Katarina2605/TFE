@@ -49,7 +49,7 @@ function handleImageError() {
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between py-3">
                 <div class="flex items-center">
-                    <a class="ml-4" href="#"><img src="View/assets/images/logo.png" alt="Progressus HTML5 template" class="h-8"></a>
+                  <a class="ml-4" href="#"><img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt" class="h-8"></a>
                 </div>
                 <div class="hidden md:flex md:items-center">
                     <ul class="flex space-x-6">
@@ -92,7 +92,7 @@ function handleImageError() {
                 <div class="w-full md:w-1/4 p-4">
                     <div class="bg-white shadow-md rounded-md p-6 text-center">
                         <div class="text-blue-500 mb-4">
-                          <i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
+                          <i class="fa fa-location-arrow fa-2xl" aria-hidden="true"></i>
                         </div>
                         <h4 class="font-semibold">Proche de chez vous</h4>
                         <p class="mt-2">Grâce à nôtre page "refuges", vous aurez la possibilité de consulter les différents refuges présents au sein de la Wallonie pour pouvoir trouver facilement le refuge qui sera le plus proche de chez vous.</p>
