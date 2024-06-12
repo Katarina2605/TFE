@@ -43,3 +43,7 @@ Route::get('/mentions', function () {
 Route::get('/credits', function () {
     return view('credits');
 });
+
+Route::get('/contact', function () {
+    return view('contact');
+});

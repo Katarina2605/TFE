@@ -41,7 +41,7 @@ defineProps({
             <li class="active"><a href="#" class="hover:underline">Accueil</a></li>
             <li><a href="refuges" class="hover:underline">Refuges</a></li>
             <li><a href="legislations" class="hover:underline">Législations</a></li>
-            <li><a href="contact.php" class="hover:underline">Contact</a></li>
+            <li><a href="contact" class="hover:underline">Contact</a></li>
 
             <!-- Utilisation de la directive v-if pour conditionner l'affichage -->
             <template v-if="isLoggedIn">
