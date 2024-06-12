@@ -38,8 +38,8 @@ function handleImageError() {
 
         <title>Respons'adopt</title>
 
-        <link rel="shortcut icon" href="View/assets/images/gt_favicon.png">
-
+      <link rel="shortcut icon" href="https://www.zupimages.net/up/24/24/a9t8.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
 
@@ -49,7 +49,6 @@ function handleImageError() {
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between py-3">
                 <div class="flex items-center">
-
                     <a class="ml-4" href="#"><img src="View/assets/images/logo.png" alt="Progressus HTML5 template" class="h-8"></a>
                 </div>
                 <div class="hidden md:flex md:items-center">
@@ -67,8 +66,9 @@ function handleImageError() {
     <!-- /.navbar -->
 
     <!-- Header -->
-    <header id="head" class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('View/assets/images/header-bg.jpg');">
-        <div class="container mx-auto text-center">
+    <header id="head" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://zupimages.net/up/24/24/4bqg.jpg');">
+
+    <div class="container mx-auto text-center">
             <h1 class="text-4xl font-bold text-white">Respons'adopt</h1>
             <p class="text-lg text-gray-200 mt-4">Notre site aura pour but de vous aider à connaître les législatives concernant l'adoption d'un animal de façon légale et responsable..<br> Nous vous aiderons également à connaître les SPA les plus proches de chez vous.</p>
             <p class="mt-6"><a class="btn bg-blue-500 text-white px-6 py-3 rounded-md" role="button" href="View/contact.php">Nous contacter</a></p>
@@ -92,7 +92,7 @@ function handleImageError() {
                 <div class="w-full md:w-1/4 p-4">
                     <div class="bg-white shadow-md rounded-md p-6 text-center">
                         <div class="text-blue-500 mb-4">
-                            <i class="fa fa-cogs fa-3x"></i>
+                          <i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
                         </div>
                         <h4 class="font-semibold">Proche de chez vous</h4>
                         <p class="mt-2">Grâce à nôtre page "refuges", vous aurez la possibilité de consulter les différents refuges présents au sein de la Wallonie pour pouvoir trouver facilement le refuge qui sera le plus proche de chez vous.</p>
@@ -101,7 +101,7 @@ function handleImageError() {
                 <div class="w-full md:w-1/4 p-4">
                     <div class="bg-white shadow-md rounded-md p-6 text-center">
                         <div class="text-blue-500 mb-4">
-                            <i class="fa fa-flash fa-3x"></i>
+                          <i class="fa fa-plus fa-2x"></i>
                         </div>
                         <h4 class="font-semibold">Responsable</h4>
                         <p class="mt-2">Une adoption se doit d'être un acte responsable. Via l'onglet "Législations", nous vous proposons de prendre connaissance des diverses lois qui sont d'application.</p>
@@ -110,7 +110,7 @@ function handleImageError() {
                 <div class="w-full md:w-1/4 p-4">
                     <div class="bg-white shadow-md rounded-md p-6 text-center">
                         <div class="text-blue-500 mb-4">
-                            <i class="fa fa-heart fa-3x"></i>
+                            <i class="fa fa-heart fa-2x"></i>
                         </div>
                         <h4 class="font-semibold">L'amour des animaux</h4>
                         <p class="mt-2">Un animal est un engagement qui durera le long de sa vie mais qui vous donnera beaucoup d'amour. Un animal, c'est un être humain à part entière et une adoption doit se prendre très au sérieux. Nous voulons vous aider à faire les choses au mieux.</p>
@@ -119,7 +119,7 @@ function handleImageError() {
                 <div class="w-full md:w-1/4 p-4">
                     <div class="bg-white shadow-md rounded-md p-6 text-center">
                         <div class="text-blue-500 mb-4">
-                            <i class="fa fa-smile-o fa-3x"></i>
+                          <i class="fa fa-handshake fa-2x" aria-hidden="true"></i>
                         </div>
                         <h4 class="font-semibold">Aider à sauver les animaux</h4>
                         <p class="mt-2">Chaque année, beaucoup d'animaux subissent un abandon. Pourtant, sauver un animal équivaut à en sauver deux : un qui trouvera un nid douillet à vie et l'autre qui aura une place libre dans un refuge.</p>
