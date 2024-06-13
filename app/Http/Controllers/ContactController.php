@@ -39,8 +39,6 @@ class ContactController extends Controller
     {
         $contacts = Contact::all(); // Récupérez tous les contacts à partir du modèle Contact
 
-        return view('messages.index', [
-            'contacts' => $contacts // Passez les contacts à la vue avec le nom de variable 'contacts'
-        ]);
+        return view('messages', compact('contacts')); // Passez les contacts à la vue 'messages'
     }
 }
