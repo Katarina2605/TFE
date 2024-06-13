@@ -223,7 +223,7 @@ defineProps({
                     </div>
                     <div class="w-full md:w-1/2 text-right">
                         <p class="text-sm">
-                            Copyright &copy; 2022, Katarina. Template créé par <a href="http://gettemplate.com/" class="text-blue-500 hover:underline" rel="designer">gettemplate</a>
+                            Copyright &copy; 2024, Katarina. Template créé par <a href="http://gettemplate.com/" class="text-blue-500 hover:underline" rel="designer">gettemplate</a>
                         </p>
                     </div>
                 </div>
