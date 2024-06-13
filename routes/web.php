@@ -65,3 +65,4 @@ Route::get('/contact', [ContactController::class, 'showForm']);
 Route::post('/contact', [ContactController::class, 'submitForm']);
 Route::get('/admin/messages', [ContactController::class, 'showMessages']);
 Route::get('/messages', [ContactController::class, 'index'])->name('messages.index');
+

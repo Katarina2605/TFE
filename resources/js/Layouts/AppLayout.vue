@@ -52,9 +52,9 @@ const logout = () => {
                                     Panneau d'administration
                                 </NavLink>
 
-                              <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                                Messages
-                              </NavLink>
+                                <NavLink :href="route('messages.index')" :active="route().current('messages.index')">
+                                    Messages
+                                </NavLink>
 
                             </div>
                         </div>
