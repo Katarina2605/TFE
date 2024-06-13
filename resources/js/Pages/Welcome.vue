@@ -32,13 +32,13 @@ defineProps({
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between py-3">
         <div class="flex items-center">
-          <a class="ml-4" href="#">
-            <img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt logo" class="h-12">
-          </a>
+            <a class="ml-4" href="index">
+                <img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt logo" class="h-12">
+            </a>
         </div>
         <div class="hidden md:flex md:items-center">
           <ul class="flex space-x-6">
-            <li class="active"><a href="#" class="hover:underline">Accueil</a></li>
+            <li class="active"><a href="index" class="hover:underline">Accueil</a></li>
             <li><a href="refuges" class="hover:underline">Refuges</a></li>
             <li><a href="legislations" class="hover:underline">Législations</a></li>
             <li><a href="contact" class="hover:underline">Contact</a></li>
@@ -212,7 +212,7 @@ defineProps({
                 <div class="flex flex-wrap justify-between">
                     <div class="w-full md:w-1/2">
                         <p class="text-sm">
-                            <a href="#" class="hover:underline">Accueil</a> |
+                            <a href="index" class="hover:underline">Accueil</a> |
                             <a href="contact" class="hover:underline">Contact</a> |
                             <a href="legislations" class="hover:underline">Legislation</a> |
                             <a href="refuges" class="hover:underline">Refuges</a> |

@@ -14,19 +14,51 @@
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between py-3">
             <div class="flex items-center">
-                <a class="ml-4" href="#">
-                    <img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt logo" class="h-8">
+                <a class="ml-4" href="index">
+                    <img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt logo" class="h-12">
                 </a>
             </div>
-            <div class="hidden md:flex md:items-center">
-                <ul class="flex space-x-6">
-                    <li><a href="/index" class="hover:underline">Accueil</a></li>
-                    <li><a href="/refuges" class="hover:underline">Refuges</a></li>
-                    <li><a href="/legislations" class="hover:underline">Législations</a></li>
-                    <li><a href="/contact" class="hover:underline">Contact</a></li>
-                    <li><a class="bg-blue-500 text-white px-3 py-2 rounded-md" href="/register">S'inscrire</a></li>
+            <div class="md:flex md:items-center">
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="/index" class="hover:underline text-white">Accueil</a></li>
+                    <li><a href="/refuges" class="hover:underline text-white">Refuges</a></li>
+                    <li><a href="/legislations" class="hover:underline text-white">Législations</a></li>
+                    <li><a href="/contact" class="hover:underline text-white">Contact</a></li>
+                    <li><a class="btn bg-blue-500 text-white px-3 py-2 rounded-md" href="/register">S'inscrire</a></li>
                 </ul>
             </div>
+
+            <!-- Menu hamburger pour les petites tailles d'écran -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu déroulant pour les petites tailles d'écran -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <ul class="flex flex-col mt-2 space-y-2">
+                    <li><a href="/index" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Accueil</a></li>
+                    <li><a href="/refuges" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Refuges</a></li>
+                    <li><a href="/legislations" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Législations</a></li>
+                    <li><a href="/contact" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Contact</a></li>
+                    <li><a href="/register" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">S'inscrire</a></li>
+                </ul>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const mobileMenuButton = document.getElementById('mobile-menu-button');
+                    const mobileMenu = document.getElementById('mobile-menu');
+
+                    mobileMenuButton.addEventListener('click', function () {
+                        mobileMenu.classList.toggle('hidden');
+                    });
+                });
+            </script>
+
         </div>
     </div>
 </div>
