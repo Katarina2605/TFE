@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -47,3 +48,20 @@ Route::get('/credits', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/messages', function () {
+    return view('messages');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/contact', [ContactController::class, 'showForm']);
+Route::post('/contact', [ContactController::class, 'submitForm']);
+Route::get('/admin/messages', [ContactController::class, 'showMessages']);
+Route::get('/messages', [ContactController::class, 'index'])->name('messages.index');
