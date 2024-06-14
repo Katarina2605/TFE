@@ -25,7 +25,7 @@
         <div class="flex items-center justify-between py-3">
             <div class="flex items-center">
                 <a class="ml-4" href="index">
-                    <img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt logo" class="h-12">
+                    <img src="https://images2.imgbox.com/67/c5/KobvRJUU_o.png" alt="Respons'adopt logo" class="h-12">
                 </a>
             </div>
             <div class="md:flex md:items-center">
@@ -97,8 +97,8 @@
                 <p>Afin de mener à bien la création de ce site web, différents sites web ont été utilisés et nous tenons à leur apporter le crédit lié à leur travail.</p>
             </div>
             <div class="bg-white p-4 rounded shadow mb-4">
-                <h4 class="font-bold mb-2">Chats, chiens, lapins...</h4>
-                <img src="https://cdn.pixabay.com/photo/2017/08/07/12/35/cat-2603395_1280.jpg" alt="" class="rounded">
+                <h4 class="font-bold mb-2">Merci pour votre contribution</h4>
+                <img src="https://images2.imgbox.com/12/c7/Q2V98jJy_o.jpgg" alt="" class="rounded">
             </div>
 
         </aside>
@@ -119,6 +119,7 @@
                 <!--<p>La favicon utilisée à l'effigie de la tête de chat qui est visible sur les divers onglets du site a été prise sur <a href="https://favicon.io/emoji-favicons/cat-face/">Favicon</a>.</p>-->
                 <p>L'icon servant de marqueur dans la page "Refuges" a été trouvée sur le site de <a href="https://cdn-icons-png.flaticon.com/512/2229/2229675.png" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Flaticon</a>.</p>
                 <p>Les icônes des réseaux sociaux proviennent de <<a href="https://icones8.fr/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Icônes8</a>.</p>
+                <p>Les 4 icônes de la section "Les raisons de faire appel à nous" proviennent de Fontawesome.</p>
                 <h3 class="text-lg font-bold mt-4">Divers</h3>
                 <p>La carte provient du site <a href="https://leafletjs.com/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Leaflet</a> qui est une librairie JavaScript Open Source.</p>
                 <p>Afin de générer la palette de couleurs nécessaire à la construction du site, j'ai fait appel à <a href="https://toolki.com/fr/image-palette" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Toolki</a>.</p>

@@ -24,7 +24,7 @@
         <div class="flex items-center justify-between py-3">
             <div class="flex items-center">
                 <a class="ml-4" href="index">
-                    <img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt logo" class="h-12">
+                    <img src="https://images2.imgbox.com/67/c5/KobvRJUU_o.png" alt="Respons'adopt logo" class="h-12">
                 </a>
             </div>
             <div class="md:flex md:items-center">
@@ -100,13 +100,13 @@
                 <p>Ces informations permettent aux utilisateurs de connaître l'identité de l'entité derrière le site et leurs droits et obligations en utilisant ses services.</p>
             </div>
             <div class="bg-white p-4 rounded shadow mb-4">
-                <h4 class="font-bold mb-2">Lorem ipsum dolor sit</h4>
-                <img src="https://cdn.pixabay.com/photo/2019/07/09/11/44/taxes-4326713_1280.jpg" alt="">
+                <h4 class="font-bold mb-2">Votre Droit à l'Information</h4>
+                <img src="https://images2.imgbox.com/10/ca/8HcuhJQ3_o.jpg" alt="">
             </div>
             <div class="bg-white p-4 rounded shadow">
-                <h4 class="font-bold mb-2">Lorem ipsum dolor sit</h4>
-                <img src="https://cdn.pixabay.com/photo/2014/06/21/08/43/rabbit-373691_1280.jpg" alt="">
-                <p>Qui, debitis, ad, neque reprehenderit laborum soluta dolor voluptate eligendi enim consequuntur eveniet recusandae rerum? Atque eos corporis provident tenetur.</p>
+                <h4 class="font-bold mb-2">Transparence et Responsabilité</h4>
+                <img src="https://images2.imgbox.com/d8/6a/XglSRG1N_o.jpg" alt="">
+                <p>Nous nous engageons à vous offrir un service transparent et responsable. Consultez nos mentions légales pour en savoir plus sur nos pratiques et notre engagement envers vous.</p>
             </div>
 
         </aside>

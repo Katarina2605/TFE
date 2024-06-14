@@ -33,7 +33,7 @@ defineProps({
       <div class="flex items-center justify-between py-3">
         <div class="flex items-center">
             <a class="ml-4" href="index">
-                <img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt logo" class="h-12">
+                <img src="https://images2.imgbox.com/67/c5/KobvRJUU_o.png" alt="Respons'adopt logo" class="h-12">
             </a>
         </div>
         <div class="hidden md:flex md:items-center">
@@ -65,7 +65,7 @@ defineProps({
 <!-- /.navbar -->
 
     <!-- Header -->
-    <header id="head" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://zupimages.net/up/24/24/4bqg.jpg');">
+    <header id="head" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images2.imgbox.com/12/c7/Q2V98jJy_o.jpg');">
 
     <div class="container mx-auto text-center">
             <h1 class="text-4xl font-bold text-white">Respons'adopt</h1>

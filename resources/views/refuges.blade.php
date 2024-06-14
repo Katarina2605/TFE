@@ -39,7 +39,7 @@
     <div class="flex items-center justify-between py-3">
       <div class="flex items-center">
           <a class="ml-4" href="index">
-              <img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt logo" class="h-12">
+              <img src="https://images2.imgbox.com/67/c5/KobvRJUU_o.png" alt="Respons'adopt logo" class="h-12">
           </a>
       </div>
         <div class="md:flex md:items-center">
@@ -111,12 +111,12 @@
         <p>Chaque année, beaucoup d'animaux subissent un abandon... Notre but ? Vous aider à trouver le refuge le plus proche de chez vous afin de vous donner toutes les cartes en main pour rendre un animal heureux.</p>
       </div>
       <div class="mb-8 p-4 bg-white rounded-lg shadow-md">
-        <h4 class="font-bold mb-2">Lorem ipsum dolor sit</h4>
-        <img src="https://cdn.pixabay.com/photo/2016/01/01/02/01/animal-welfare-1116203_1280.jpg" alt="" class="w-full h-48 object-cover rounded-lg">
+        <h4 class="font-bold mb-2">Les refuges regorgent d'animaux</h4>
+        <img src="https://images2.imgbox.com/8b/72/icDAv9sC_o.jpg" alt="" class="w-full h-48 object-cover rounded-lg">
       </div>
       <div class="mb-8 p-4 bg-white rounded-lg shadow-md">
-        <h4 class="font-bold mb-2">Lorem ipsum dolor sit</h4>
-        <img src="https://cdn.pixabay.com/photo/2016/01/01/02/01/animal-welfare-1116205_1280.jpg" alt="" class="w-full h-48 object-cover rounded-lg mb-2">
+        <h4 class="font-bold mb-2">Un acte d'amour peut changer une vie à jamais.</h4>
+        <img src="https://images2.imgbox.com/3f/eb/yKRA4xH3_o.jpg" alt="" class="w-full h-48 object-cover rounded-lg mb-2">
         <p>Le saviez-vous ? Adopter un animal, c'est en aider deux : le premier qui sera votre compagnon pour la vie, et le second sera celui qui pourra avoir une place dans un refuge grâce à la place libérée.</p>
       </div>
     </aside>

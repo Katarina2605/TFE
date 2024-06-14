@@ -15,7 +15,7 @@
         <div class="flex items-center justify-between py-3">
             <div class="flex items-center">
                 <a class="ml-4" href="index">
-                    <img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt logo" class="h-12">
+                    <img src="https://images2.imgbox.com/67/c5/KobvRJUU_o.png" alt="Respons'adopt logo" class="h-12">
                 </a>
             </div>
             <div class="md:flex md:items-center">

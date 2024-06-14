@@ -24,7 +24,7 @@
         <div class="flex items-center justify-between py-3">
             <div class="flex items-center">
                 <a class="ml-4" href="index">
-                    <img src="https://zupimages.net/up/24/24/8p9g.png" alt="Respons'adopt logo" class="h-12">
+                    <img src="https://images2.imgbox.com/67/c5/KobvRJUU_o.png" alt="Respons'adopt logo" class="h-12">
                 </a>
             </div>
             <div class="md:flex md:items-center">
@@ -97,11 +97,11 @@
             </div>
             <div class="bg-white p-4 rounded-lg shadow-lg mb-4">
                 <h4 class="font-bold mb-2">Chats, chiens, lapins...</h4>
-                <img src="https://cdn.pixabay.com/photo/2017/07/10/23/49/club-2492011_1280.jpg" alt="" class="rounded-lg">
+                <img src="https://images2.imgbox.com/e3/74/6E9UDZ7S_o.jpg" alt="" class="rounded-lg">
             </div>
             <div class="bg-white p-4 rounded-lg shadow-lg">
                 <h4 class="font-bold mb-2">Tous sont concernés.</h4>
-                <img src="https://cdn.pixabay.com/photo/2017/09/26/18/12/kittens-2789622_1280.jpg" alt="" class="rounded-lg mb-2">
+                <img src="https://images2.imgbox.com/9d/a2/9sJ85Jqh_o.jpg" alt="" class="rounded-lg mb-2">
                 <p>Nous voulons vous aider à prendre connaissance des lois qui sont d'application pour adopter un animal en Wallonie. C'est pour cette raison que nous désirons mettre toutes les ressources à votre disposition.</p>
             </div>
 
