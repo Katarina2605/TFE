@@ -79,9 +79,10 @@ defineProps({
             <h1 class="text-4xl font-bold text-white">Respons'adopt</h1>
             <p class="text-lg text-gray-200 mt-4">Notre site aura pour but de vous aider à connaître les législatives concernant l'adoption d'un animal de façon légale et responsable..<br> Nous vous aiderons également à connaître les SPA les plus proches de chez vous.</p>
         <p class="mt-6">
-            <a class="btn bg-blue-500 text-white px-6 py-3 rounded-md inline-block transition-transform transform hover:scale-105" role="button" href="contact">
+            <a class="btn bg-blue-500 hover:bg-blue-700 text-white hover:text-white px-6 py-3 rounded-md inline-block transition-transform transform hover:scale-105" role="button" href="contact">
                 Nous contacter
             </a>
+
         </p>
 
     </div>
@@ -171,7 +172,12 @@ defineProps({
 
         <div class="bg-blue-100 py-8 px-4 mt-8 rounded-md">
             <h4 class="text-center text-lg">Certaines questions restent en suspens ? Vous avez besoin de réponses supplémentaires afin de vous lancer dans une adoption ? N'hésitez surtout pas à prendre contact avec nous. Si vôtre question concerne un animal, le refuge concerné sera apte à répondre à vos questions.</h4>
-            <p class="text-center mt-4"><a class="btn bg-blue-500 text-white px-6 py-3 rounded-md" href="contact">Contactez-nous »</a></p>
+            <p class="text-center mt-4">
+                <a class="btn bg-blue-500 hover:bg-blue-700 text-white hover:text-white px-6 py-3 rounded-md transition-colors" href="contact">
+                    Contactez-nous »
+                </a>
+            </p>
+
         </div>
 
     </div>	<!-- /container -->
