@@ -1,3 +1,16 @@
+<style>
+    #social {
+        background-color: transparent; /* Remove the blue background */
+        padding-top: 0rem; /* Adjust padding or margin if necessary */
+        padding-bottom: 0rem;
+    }
+
+    /* Adjust social link icons color if needed */
+    #social a {
+        color: #fff; /* Set the color to white */
+    }
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
