@@ -94,7 +94,7 @@
                 </header>
 
                 <p class="mb-8">
-                    Afin de bénéficier des dernières informations nous concernant, n'hésitez surtout pas à souscrire à notre newsletter.
+                    Si vous avez une question, une remarque ou autre, n'hésitez surtout pas à prendre contact avec nous !
                 </p>
 
                 <div class="container mx-auto p-4">
