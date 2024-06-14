@@ -44,14 +44,22 @@ defineProps({
             <li><a href="contact" class="hover:underline">Contact</a></li>
 
             <!-- Utilisation de la directive v-if pour conditionner l'affichage -->
-            <template v-if="isLoggedIn">
-              <li><a class="btn bg-blue-500 text-white px-3 py-2 rounded-md" href="dashboard">Dashboard</a></li>
-            </template>
+              <template v-if="isLoggedIn">
+                  <li>
+                      <a class="btn bg-blue-500 hover:bg-blue-700 text-white px-3 py-2 rounded-md transition-colors" href="dashboard">
+                          Dashboard
+                      </a>
+                  </li>
+              </template>
 
-            <template v-else>
-              <!-- Redirection vers la page d'inscription -->
-              <li><a class="btn bg-blue-500 text-white px-3 py-2 rounded-md" href="register">S'inscrire</a></li>
-            </template>
+              <template v-else>
+                  <li>
+                      <a class="btn bg-blue-500 hover:bg-blue-700 text-white px-3 py-2 rounded-md transition-colors" href="register">
+                          S'inscrire
+                      </a>
+                  </li>
+              </template>
+
 
           </ul>
         </div>
@@ -70,8 +78,13 @@ defineProps({
     <div class="container mx-auto text-center">
             <h1 class="text-4xl font-bold text-white">Respons'adopt</h1>
             <p class="text-lg text-gray-200 mt-4">Notre site aura pour but de vous aider à connaître les législatives concernant l'adoption d'un animal de façon légale et responsable..<br> Nous vous aiderons également à connaître les SPA les plus proches de chez vous.</p>
-            <p class="mt-6"><a class="btn bg-blue-500 text-white px-6 py-3 rounded-md" role="button" href="contact">Nous contacter</a></p>
-        </div>
+        <p class="mt-6">
+            <a class="btn bg-blue-500 text-white px-6 py-3 rounded-md inline-block transition-transform transform hover:scale-105" role="button" href="contact">
+                Nous contacter
+            </a>
+        </p>
+
+    </div>
     </header>
     <!-- /Header -->
 

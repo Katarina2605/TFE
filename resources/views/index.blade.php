@@ -48,7 +48,12 @@
                     <li><a href="/refuges" class="hover:underline text-white">Refuges</a></li>
                     <li><a href="/legislations" class="hover:underline text-white">Législations</a></li>
                     <li><a href="/contact" class="hover:underline text-white">Contact</a></li>
-                    <li><a class="btn bg-blue-500 text-white px-3 py-2 rounded-md" href="/register">S'inscrire</a></li>
+                    <li>
+                        <a class="btn bg-blue-500 hover:bg-blue-700 text-white px-3 py-2 rounded-md transition-colors" href="/register">
+                            S'inscrire
+                        </a>
+                    </li>
+
                 </ul>
             </div>
 
@@ -94,7 +99,12 @@
     <div class="container mx-auto text-center">
         <h1 class="text-4xl font-bold text-white">Respons'adopt</h1>
         <p class="text-lg text-gray-200 mt-4">Notre site aura pour but de vous aider à connaître les législatives concernant l'adoption d'un animal de façon légale et responsable..<br> Nous vous aiderons également à connaître les SPA les plus proches de chez vous.</p>
-        <p class="mt-6"><a class="btn bg-blue-500 text-white px-6 py-3 rounded-md" role="button" href="contact">Nous contacter</a></p>
+        <p class="mt-6">
+            <a class="btn bg-blue-500 text-white px-6 py-3 rounded-md inline-block transition-transform transform hover:scale-105" role="button" href="contact">
+                Nous contacter
+            </a>
+        </p>
+
     </div>
 </header>
 <!-- /Header -->
