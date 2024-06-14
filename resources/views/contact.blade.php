@@ -86,7 +86,7 @@
     <div class="flex flex-wrap">
 
         <!-- Article main content -->
-        <article class="w-full md:w-2/3 lg:w-3/4">
+        <article class="w-full">
 
             <div class="bg-white p-6 rounded shadow mb-4">
                 <header class="mb-4">
@@ -96,7 +96,7 @@
                 <p class="mb-8">
                     Si vous avez une question, une remarque ou autre, n'hésitez surtout pas à prendre contact avec nous !
                 </p>
-
+                <!-- CREATION DU FORMULAIRE DE CONTACT -->
                 <div class="container mx-auto p-4">
                     @if(session('success'))
                         <div class="bg-green-500 text-white p-2 rounded mb-4">
@@ -104,45 +104,31 @@
                         </div>
                     @endif
 
-                    <form action="/contact" method="POST" class="bg-white p-6 rounded shadow-md">
+                    <form action="/contact" method="POST" class="bg-gray-100 text-black p-6 rounded shadow-md">
                         @csrf
                         <div class="mb-4">
                             <label for="email" class="block text-sm font-bold mb-2">Email:</label>
-                            <input type="email" name="email" id="email" class="border rounded w-full py-2 px-3" required>
-                            @error('email')
+                            <input type="email" name="email" id="email" class="border rounded w-full py-2 px-3" required> <!-- Champ obligatioire -->
+                            @error('email') <!-- Génération d'une erreur si laissé vidé -->
                             <span class="text-red-500 text-xs">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="mb-4">
                             <label for="message" class="block text-sm font-bold mb-2">Message:</label>
-                            <textarea name="message" id="message" class="border rounded w-full py-2 px-3" required></textarea>
-                            @error('message')
+                            <textarea name="message" id="message" class="border rounded w-full py-2 px-3" required></textarea> <!-- Champ obligatioire -->
+                            @error('message') <!-- Génération d'une erreur si laissé vidé -->
                             <span class="text-red-500 text-xs">{{ $message }}</span>
                             @enderror
                         </div>
-                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Envoyer</button>
+                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Envoyer</button> <!-- Si tout est OK, le message s'envoie -->
                     </form>
+                    <!-- FIN DU FORMULAIRE DE CONTACT -->
                 </div>
             </div>
 
         </article>
         <!-- /Article -->
 
-        <!-- Sidebar -->
-        <aside class="w-full md:w-1/3 lg:w-1/4 mb-4 md:mb-0">
-
-            <div class="bg-white p-4 rounded shadow mb-4">
-                <h4 class="font-bold mb-2">Adresse</h4>
-                <address class="not-italic mb-4">
-                    Rue de la limite 6, 1300 Wavre.
-                </address>
-                <h4 class="font-bold mb-2">Téléphone</h4>
-                <address class="not-italic">
-                    010 22 20 26
-                </address>
-            </div>
-        </aside>
-        <!-- /Sidebar -->
 
     </div>
 </div> <!-- /container -->
