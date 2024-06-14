@@ -148,7 +148,7 @@
 
                     <h2 class="text-xl font-bold mt-4">Propriété intellectuelle</h2>
                     <p>Le contenu du site est la propriété intellectuelle de Katarina Gerlage.
-                    <p>Le design du site provient d'un template bootstap de <a href="http://gettemplate.com/" class="text-blue-500 hover:underline" rel="designer">gettemplate</a></p>.
+                    <p>Le design du site provient d'un template bootstap de <a href="http://gettemplate.com/" class="text-blue-500 hover:underline" rel="designer">gettemplate</a></p>
                     <p>Les images sont libres de droits d'usage professionnel.</p>
                     <p>Toute reproduction ou utilisation sans autorisation préalable est strictement interdite.</p>
 
