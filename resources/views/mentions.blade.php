@@ -86,80 +86,89 @@
     </nav>
 
 
-    <div class="flex flex-wrap">
+    <div class="container mx-auto px-4 mt-20">
 
-        <!-- Sidebar -->
-        <aside class="w-full md:w-1/3 lg:w-1/4 mb-4 md:mb-0">
+        <nav class="bg-white py-3 rounded mb-4 shadow">
+            <ol class="list-reset flex">
+                <li class="ml-2"><a href="index" class="text-blue-500">Accueil</a></li>
+                <li class="text-gray-500 mx-2">/</li>
+                <li class="ml-2 text-gray-500">Mentions légales</li>
+            </ol>
+        </nav>
 
-            <div class="bg-white p-4 rounded shadow mb-4">
-                <h4 class="font-bold mb-2">Les mentions légales, qu'est-ce que c'est ?</h4>
-                <p>Les mentions légales sont essentielles pour assurer la transparence et la conformité de votre site web aux exigences légales.</p>
-                <br>
-                <p>Elles incluent des informations sur l'éditeur du site, ses coordonnées, son statut juridique, ainsi que des détails sur la protection des données personnelles et les droits d'auteur.</p>
-                <br>
-                <p>Ces informations permettent aux utilisateurs de connaître l'identité de l'entité derrière le site et leurs droits et obligations en utilisant ses services.</p>
-            </div>
-            <div class="bg-white p-4 rounded shadow mb-4">
-                <h4 class="font-bold mb-2">Votre Droit à l'Information</h4>
-                <img src="https://images2.imgbox.com/10/ca/8HcuhJQ3_o.jpg" alt="">
-            </div>
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="font-bold mb-2">Transparence et Responsabilité</h4>
-                <img src="https://images2.imgbox.com/d8/6a/XglSRG1N_o.jpg" alt="">
-                <p>Nous nous engageons à vous offrir un service transparent et responsable. Consultez nos mentions légales pour en savoir plus sur nos pratiques et notre engagement envers vous.</p>
-            </div>
+        <div class="flex flex-wrap">
 
-        </aside>
-        <!-- /Sidebar -->
+            <!-- Sidebar -->
+            <aside class="w-full md:w-1/3 lg:w-1/4 mb-4 md:mb-0 md:pr-4 lg:pr-6">
+                <div class="bg-white p-4 rounded shadow mb-4">
+                    <h4 class="font-bold mb-2">Les mentions légales, qu'est-ce que c'est ?</h4>
+                    <p>Les mentions légales sont essentielles pour assurer la transparence et la conformité de votre site web aux exigences légales.</p>
+                    <br>
+                    <p>Elles incluent des informations sur l'éditeur du site, ses coordonnées, son statut juridique, ainsi que des détails sur la protection des données personnelles et les droits d'auteur.</p>
+                    <br>
+                    <p>Ces informations permettent aux utilisateurs de connaître l'identité de l'entité derrière le site et leurs droits et obligations en utilisant ses services.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow mb-4">
+                    <h4 class="font-bold mb-2">Votre Droit à l'Information</h4>
+                    <img src="https://images2.imgbox.com/10/ca/8HcuhJQ3_o.jpg" alt="">
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="font-bold mb-2">Transparence et Responsabilité</h4>
+                    <img src="https://images2.imgbox.com/d8/6a/XglSRG1N_o.jpg" alt="">
+                    <p>Nous nous engageons à vous offrir un service transparent et responsable. Consultez nos mentions légales pour en savoir plus sur nos pratiques et notre engagement envers vous.</p>
+                </div>
+            </aside>
+            <!-- /Sidebar -->
 
-        <!-- Article main content -->
-        <article class="w-full md:w-2/3 lg:w-3/4">
+            <!-- Article main content -->
+            <article class="w-full md:w-2/3 lg:w-3/4">
 
-            <div class="bg-white p-4 rounded shadow mb-4">
-                <header class="mb-4">
-                    <h1 class="text-2xl font-bold">Mentions légales</h1>
-                </header>
-                <h2 class="text-xl font-bold mt-4">Éditeur du site :</h2>
-                <p>Katarina Gerlage</p>
-                <p>Étudiante</p>
+                <div class="bg-white p-4 rounded shadow mb-4">
+                    <header class="mb-4">
+                        <h1 class="text-2xl font-bold">Mentions légales</h1>
+                    </header>
+                    <h2 class="text-xl font-bold mt-4">Éditeur du site :</h2>
+                    <p>Katarina Gerlage</p>
+                    <p>Étudiante</p>
 
-                <h2 class="text-xl font-bold mt-4">Adresse</h2>
-                <p>Rue de la limite 6, 1300 Wavre.</p>
+                    <h2 class="text-xl font-bold mt-4">Adresse</h2>
+                    <p>Rue de la limite 6, 1300 Wavre.</p>
 
-                <h2 class="text-xl font-bold mt-4">Téléphone</h2>
-                <p>0katarina.gerlage@ifosup.wavre.be</p>
+                    <h2 class="text-xl font-bold mt-4">Téléphone</h2>
+                    <p>0katarina.gerlage@ifosup.wavre.be</p>
 
-                <h2 class="text-xl font-bold mt-4">Adresse mail</h2>
-                <p>010 22 20 26</p>
+                    <h2 class="text-xl font-bold mt-4">Adresse mail</h2>
+                    <p>010 22 20 26</p>
 
-                <h2 class="text-xl font-bold mt-4">Responsable de publication</h2>
-                <p>Katarina Gerlage.
+                    <h2 class="text-xl font-bold mt-4">Responsable de publication</h2>
+                    <p>Katarina Gerlage.
 
-                <h2 class="text-xl font-bold mt-4">Hébergement</h2>
-                <p>Le site est hébergé par OVH, dont le siège social est situé à <b>2 rue Kellermann, 59100 Roubaix, France.</b>.</p>
+                    <h2 class="text-xl font-bold mt-4">Hébergement</h2>
+                    <p>Le site est hébergé par OVH, dont le siège social est situé à <b>2 rue Kellermann, 59100 Roubaix, France.</b>.</p>
 
-                <h2 class="text-xl font-bold mt-4">Propriété intellectuelle</h2>
-                <p>Le contenu du site est la propriété intellectuelle de Katarina Gerlage.
-                <p>Le design du site provient d'un template bootstap de <a href="http://gettemplate.com/" class="text-blue-500 hover:underline" rel="designer">gettemplate</a></p>.
-                <p>Les images sont libres de droits d'usage professionnel.</p>
-                <p>Toute reproduction ou utilisation sans autorisation préalable est strictement interdite.</p>
+                    <h2 class="text-xl font-bold mt-4">Propriété intellectuelle</h2>
+                    <p>Le contenu du site est la propriété intellectuelle de Katarina Gerlage.
+                    <p>Le design du site provient d'un template bootstap de <a href="http://gettemplate.com/" class="text-blue-500 hover:underline" rel="designer">gettemplate</a></p>.
+                    <p>Les images sont libres de droits d'usage professionnel.</p>
+                    <p>Toute reproduction ou utilisation sans autorisation préalable est strictement interdite.</p>
 
-                <h2 class="text-xl font-bold mt-4">Protection des données personnelles</h2>
-                <p>Les données personnelles collectées via ce site sont utilisées uniquement à des fins de communication et ne sont en aucun cas cédées à des tiers. Conformément à la loi, vous disposez d'un droit d'accès, de rectification et de suppression de vos données.</p>
+                    <h2 class="text-xl font-bold mt-4">Protection des données personnelles</h2>
+                    <p>Les données personnelles collectées via ce site sont utilisées uniquement à des fins de communication et ne sont en aucun cas cédées à des tiers. Conformément à la loi, vous disposez d'un droit d'accès, de rectification et de suppression de vos données.</p>
 
-                <h2 class="text-xl font-bold mt-4">Utilisation des cookies</h2>
-                <p>Ce site n'utilise pas de  cookies.</p>
+                    <h2 class="text-xl font-bold mt-4">Utilisation des cookies</h2>
+                    <p>Ce site n'utilise pas de  cookies.</p>
 
-                <h2 class="text-xl font-bold mt-4">Droits d'auteurs</h2>
-                <p>Tous droits réservés.</p>
+                    <h2 class="text-xl font-bold mt-4">Droits d'auteurs</h2>
+                    <p>Tous droits réservés.</p>
 
-                <h2 class="text-xl font-bold mt-4">Date de dernière mise à jour.</h2>
-                <p>Juin 2024.</p>
-            </div>
+                    <h2 class="text-xl font-bold mt-4">Date de dernière mise à jour.</h2>
+                    <p>Juin 2024.</p>
+                </div>
 
-        </article>
-        <!-- /Article -->
+            </article>
+            <!-- /Article -->
 
+        </div>
     </div>
 </div>
 <!-- /container -->

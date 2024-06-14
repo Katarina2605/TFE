@@ -187,8 +187,10 @@
     </div>
     </div>
 </body>
-      <footer id="footer" class="bg-gray-900 text-white py-8 mt-8">
-    <div class="container mx-full">
+
+<!-- FOOTER -->
+<footer id="footer" class="bg-gray-900 text-white py-8 mt-8">
+    <div class="container mx-auto">
         <div class="flex flex-wrap -mx-4">
             <div class="w-full md:w-1/3 px-4">
                 <h3 class="text-lg font-semibold">Contact</h3>
@@ -272,7 +274,7 @@
         </div>
     </div>
 </footer>
-</body>
+
 </html>
 
 <style>
