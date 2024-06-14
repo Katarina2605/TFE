@@ -78,7 +78,7 @@
         <ol class="list-reset flex">
             <li class="ml-2"><a href="index" class="text-blue-500">Accueil</a></li>
             <li class="text-gray-500 mx-2">/</li>
-            <li class="ml-2 text-gray-500">A propos de nous</li>
+            <li class="ml-2 text-gray-500">Contactez-nous</li>
         </ol>
     </nav>
 
