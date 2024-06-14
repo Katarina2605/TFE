@@ -135,10 +135,10 @@
                     <p>Rue de la limite 6, 1300 Wavre.</p>
 
                     <h2 class="text-xl font-bold mt-4">Téléphone</h2>
-                    <p>0katarina.gerlage@ifosup.wavre.be</p>
+                    <p>010 22 20 26</p>
 
                     <h2 class="text-xl font-bold mt-4">Adresse mail</h2>
-                    <p>010 22 20 26</p>
+                    <p>katarina.gerlage@ifosup.wavre.be</p>
 
                     <h2 class="text-xl font-bold mt-4">Responsable de publication</h2>
                     <p>Katarina Gerlage.
