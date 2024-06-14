@@ -102,91 +102,93 @@
     </nav>
 
 
-  <div class="flex flex-wrap -mx-4">
+    <body class="bg-gray-100">
+    <div class="container mx-auto my-4 flex flex-wrap -mx-4">
+        <!-- Sidebar -->
+        <aside class="w-full md:w-1/3 px-4">
+            <div class="mb-8 p-4 bg-white rounded-lg shadow-md">
+                <h4 class="font-bold mb-2">Favoriser les adoptions</h4>
+                <p>Chaque année, beaucoup d'animaux subissent un abandon... Notre but ? Vous aider à trouver le refuge le plus proche de chez vous afin de vous donner toutes les cartes en main pour rendre un animal heureux.</p>
+            </div>
+            <div class="mb-8 p-4 bg-white rounded-lg shadow-md">
+                <h4 class="font-bold mb-2">Les refuges regorgent d'animaux</h4>
+                <img src="https://images2.imgbox.com/8b/72/icDAv9sC_o.jpg" alt="" class="w-full h-48 object-cover rounded-lg">
+            </div>
+            <div class="mb-8 p-4 bg-white rounded-lg shadow-md">
+                <h4 class="font-bold mb-2">Un acte d'amour peut changer une vie à jamais.</h4>
+                <img src="https://images2.imgbox.com/3f/eb/yKRA4xH3_o.jpg" alt="" class="w-full h-48 object-cover rounded-lg mb-2">
+                <p>Le saviez-vous ? Adopter un animal, c'est en aider deux : le premier qui sera votre compagnon pour la vie, et le second sera celui qui pourra avoir une place dans un refuge grâce à la place libérée.</p>
+            </div>
+        </aside>
+        <!-- /Sidebar -->
 
-    <!-- Sidebar -->
-    <aside class="w-full md:w-1/3 px-4">
-      <div class="mb-8 p-4 bg-white rounded-lg shadow-md">
-        <h4 class="font-bold mb-2">Favoriser les adoptions</h4>
-        <p>Chaque année, beaucoup d'animaux subissent un abandon... Notre but ? Vous aider à trouver le refuge le plus proche de chez vous afin de vous donner toutes les cartes en main pour rendre un animal heureux.</p>
-      </div>
-      <div class="mb-8 p-4 bg-white rounded-lg shadow-md">
-        <h4 class="font-bold mb-2">Les refuges regorgent d'animaux</h4>
-        <img src="https://images2.imgbox.com/8b/72/icDAv9sC_o.jpg" alt="" class="w-full h-48 object-cover rounded-lg">
-      </div>
-      <div class="mb-8 p-4 bg-white rounded-lg shadow-md">
-        <h4 class="font-bold mb-2">Un acte d'amour peut changer une vie à jamais.</h4>
-        <img src="https://images2.imgbox.com/3f/eb/yKRA4xH3_o.jpg" alt="" class="w-full h-48 object-cover rounded-lg mb-2">
-        <p>Le saviez-vous ? Adopter un animal, c'est en aider deux : le premier qui sera votre compagnon pour la vie, et le second sera celui qui pourra avoir une place dans un refuge grâce à la place libérée.</p>
-      </div>
-    </aside>
-    <!-- /Sidebar -->
+        <!-- Article main content -->
+        <div class="w-full md:w-2/3 px-4 rounded-lg shadow-md" style="background-color: white; padding: 20px;">
+            <article class="w-full">
+                <header class="mb-4">
+                    <h1 class="text-3xl font-bold">Refuges situés en Wallonie</h1>
+                </header>
 
-    <!-- Article main content -->
-    <article class="w-full md:w-2/3 px-4">
-      <header class="mb-4">
-        <h1 class="text-3xl font-bold">Refuges situés en Wallonie</h1>
-      </header>
+                <div id="map" class="mb-4"></div>
 
-      <div id="map" class="mb-4"></div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const mobileMenuButton = document.getElementById('mobile-menu-button');
+                        const mobileMenu = document.getElementById('mobile-menu');
 
-      <script>
-        var map = L.map('map').setView([50.71890273096661, 4.608002540534588], 13);
+                        mobileMenuButton.addEventListener('click', function () {
+                            mobileMenu.classList.toggle('hidden');
+                        });
 
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 19,
-          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
+                        // Initialisation de la carte
+                        var map = L.map('map').setView([50.71890273096661, 4.608002540534588], 13);
+                        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            maxZoom: 19,
+                            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                        }).addTo(map);
 
-        var pawIcon = L.icon({
-          iconUrl: 'https://cdn-icons-png.flaticon.com/512/2229/2229675.png',
-          iconSize: [30, 30],
-          iconAnchor: [22, -15],
-          popupAnchor: [-3, -76]
-        });
+                        // Icone personnalisée pour les marqueurs
+                        var pawIcon = L.icon({
+                            iconUrl: 'https://cdn-icons-png.flaticon.com/512/2229/2229675.png',
+                            iconSize: [30, 30],
+                            iconAnchor: [22, -15],
+                            popupAnchor: [-3, -76]
+                        });
 
-        var marker = L.marker([50.625672934911115, 4.765615284390158], {icon: pawIcon}).addTo(map);
-        marker.bindPopup("<b>Sans collier</b><br>Chau. de Charleroi 68<br>1360 Perwez<br>081354090");
+                        // Données des marqueurs
+                        var refuges = [
+                            { coords: [50.625672934911115, 4.765615284390158], name: "Sans collier", address: "Chau. de Charleroi 68, 1360 Perwez, 081354090" },
+                            { coords: [50.703189354253276, 4.9966058095239125], name: "SOS Petits Museaux", address: "Rue Cyrille Dewael 26, 1350 Orp-Jauche" },
+                            { coords: [50.747130738605556, 4.811446942327357], name: "Animal Behaviour Center", address: "Rue de la Maison du Bois 108, 1370 Jodoigne, 0497481557" },
+                            { coords: [50.596290683143145, 4.342780696027994], name: "Un toit pour eux", address: "Av. du Centenaire 80, 1400 Nivelles, 0493773527" },
+                            { coords: [50.67103436936168, 4.349777826719766], name: "Everyone Matters", address: "Rue les Tiennes 51, 1421 Braine L'alleud, 0465881689" },
+                            { coords: [50.67103436936168, 4.349777826719766], name: "Animal Sans Logis", address: "Enclos Tesnière 1, 4122 Neupré, 043714321" },
+                            { coords: [50.65539326626177, 5.269532237090876], name: "Animal Sans Toi...t", address: "Rue de Huy 188, 4317 Faimes, 019630036" },
+                            { coords: [50.65539326626177, 5.269532237090876], name: "La croix bleue de Belgique", address: "Rue du Charbonnage 1, 5150 Floreffe, 081440660" },
+                            { coords: [50.65496541004919, 4.163812209942694], name: "Ligue Nationale pour la Protection du Furet", address: "1430, Chau. de Mons 26, 1430 Rebecq, 067336767" },
+                            { coords: [50.673550754415146, 4.617010255800462], name: "Chiens en liberté", address: "1430, Chau. de Mons 26, 1430 Rebecq, 067336767" }
+                        ];
 
-        var marker = L.marker([50.703189354253276, 4.9966058095239125], {icon: pawIcon}).addTo(map);
-        marker.bindPopup("<b>SOS Petits Museaux</b><br>Rue Cyrille Dewael 26<br>1350 Orp-Jauche");
+                        // Ajout des marqueurs sur la carte
+                        refuges.forEach(refuge => {
+                            var marker = L.marker(refuge.coords, { icon: pawIcon }).addTo(map);
+                            marker.bindPopup(`<b>${refuge.name}</b><br>${refuge.address}`);
+                        });
+                    });
+                </script>
 
-        var marker = L.marker([50.747130738605556, 4.811446942327357], {icon: pawIcon}).addTo(map);
-        marker.bindPopup("<b>Animal Behaviour Center</b><br>Rue de la Maison du Bois 108<br>1370 Jodoigne<br>0497481557");
-
-        var marker = L.marker([50.596290683143145, 4.342780696027994], {icon: pawIcon}).addTo(map);
-        marker.bindPopup("<b>Un toit pour eux</b><br>Av. du Centenaire 80<br>1400 Nivelles<br>0493773527");
-
-        var marker = L.marker([50.67103436936168, 4.349777826719766], {icon: pawIcon}).addTo(map);
-        marker.bindPopup("<b>Everyone Matters</b><br>Rue les Tiennes 51</br>1421 Braine L'alleud<br>0465881689");
-
-        var marker = L.marker([50.67103436936168, 4.349777826719766], {icon: pawIcon}).addTo(map);
-        marker.bindPopup("<b>Animal Sans Logis</b><br>Enclos Tesnière 1<br>4122 Neupré<br>043714321");
-
-        var marker = L.marker([50.65539326626177, 5.269532237090876], {icon: pawIcon}).addTo(map);
-        marker.bindPopup("<b>Animal Sans Toi...t</b><br>Rue de Huy 188<br>4317 Faimes<br>019630036");
-
-        var marker = L.marker([50.65539326626177, 5.269532237090876], {icon: pawIcon}).addTo(map);
-        marker.bindPopup("<b>La croix bleue de Belgique</b><br>Rue du Charbonnage 1<br>5150 Floreffe<br>081440660");
-
-        var marker = L.marker([50.65496541004919, 4.163812209942694], {icon: pawIcon}).addTo(map);
-        marker.bindPopup("<b>Ligue Nationale pour la Protection du Furet</b><br>1430, Chau. de Mons 26<br>1430 Rebecq<br>067336767");
-
-        var marker = L.marker([50.673550754415146, 4.617010255800462], {icon: pawIcon}).addTo(map);
-        marker.bindPopup("<b>Chiens en liberté</b><br>1430, Chau. de Mons 26<br>1430 Rebecq<br>067336767");
-      </script>
-
-        <p>Découvrez les refuges dédiés au bien-être des animaux dans le Brabant Wallon grâce à cette carte interactive. Ces sanctuaires offrent un refuge sûr pour une variété d'animaux, leur procurant soins, sécurité et amour.</p><br>
-        <p>Chaque point sur la carte représente un lieu où des bénévoles dévoués et des professionnels travaillent ensemble pour offrir une seconde chance à des animaux maltraités, abandonnés ou en difficulté. </p><br>
-        <p>Explorez ces refuges où l'espoir renaît pour de nombreuses vies, et où vous pouvez contribuer à soutenir cette noble cause en offrant votre temps, votre aide ou simplement en partageant leur histoire.</p><br>
-        <p>Ensemble, nous pouvons faire une différence pour nos amis à fourrure et à plumes.</p>
-    </article>
-    <!-- /Article -->
-  </div>
-</div>  <!-- /container -->
-
-<footer id="footer" class="bg-gray-900 text-white py-8 mt-8">
-    <div class="container mx-auto">
+                <p>Découvrez les refuges dédiés au bien-être des animaux dans le Brabant Wallon grâce à cette carte interactive. Ces sanctuaires offrent un refuge sûr pour une variété d'animaux, leur procurant soins, sécurité et amour.</p><br>
+                <p>Chaque point sur la carte représente un lieu où des bénévoles dévoués et des professionnels travaillent ensemble pour offrir une seconde chance à des animaux maltraités, abandonnés ou en difficulté. </p><br>
+                <p>Explorez ces refuges où l'espoir renaît pour de nombreuses vies, et où vous pouvez contribuer à soutenir cette noble cause en offrant votre temps, votre aide ou simplement en partageant leur histoire.</p><br>
+                <p>Ensemble, nous pouvons faire une différence pour nos amis à fourrure et à plumes.</p>
+            </article>
+        </div>
+        <!-- /Article main content -->
+    </div>
+    </div>
+</body>
+      <footer id="footer" class="bg-gray-900 text-white py-8 mt-8">
+    <div class="container mx-full">
         <div class="flex flex-wrap -mx-4">
             <div class="w-full md:w-1/3 px-4">
                 <h3 class="text-lg font-semibold">Contact</h3>
@@ -272,3 +274,23 @@
 </footer>
 </body>
 </html>
+
+<style>
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+
+    /* Améliorer l'affichage du menu sur mobile */
+    @media (max-width: 768px) {
+        #mobile-menu {
+            display: none;
+        }
+        #mobile-menu.show {
+            display: block;
+        }
+    }
+
+    #map { height: 400px; position: relative; z-index: 1; }
+    .navbar { position: fixed; top: 0; width: 100%; z-index: 10; }
+</style>
