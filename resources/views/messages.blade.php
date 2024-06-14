@@ -69,9 +69,9 @@
 <div class="container mx-auto px-4 mt-20">
     <nav class="bg-white py-3 rounded mb-4 shadow">
         <ol class="list-reset flex">
-            <li><a href="/index" class="text-blue-500">Accueil</a></li>
+            <li class="ml-2"><a href="index" class="text-blue-500">Accueil</a></li>
             <li class="text-gray-500 mx-2">/</li>
-            <li class="text-gray-500">Messages reçus</li>
+            <li class="ml-2 text-gray-500">Messages reçus</li>
         </ol>
     </nav>
 

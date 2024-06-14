@@ -93,10 +93,14 @@
 <!-- container -->
 <div class="container mx-auto px-4 py-8">
 
-  <ol class="breadcrumb flex space-x-2">
-    <li><a href="index" class="hover:underline text-blue-600">Accueil</a></li>
-    <li class="text-gray-600">/ Refuges</li>
-  </ol>
+    <nav class="bg-white py-3 rounded mb-4 shadow">
+        <ol class="list-reset flex">
+            <li class="ml-2"><a href="index" class="text-blue-500">Accueil</a></li>
+            <li class="text-gray-500 mx-2">/</li>
+            <li class="ml-2 text-gray-500">Refuges</li>
+        </ol>
+    </nav>
+
 
   <div class="flex flex-wrap -mx-4">
 
@@ -172,10 +176,10 @@
         marker.bindPopup("<b>Chiens en liberté</b><br>1430, Chau. de Mons 26<br>1430 Rebecq<br>067336767");
       </script>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, mollitia.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, perspiciatis, ea, blanditiis tenetur culpa voluptas atque facere odio aliquam eligendi corporis quae natus optio aperiam dolor voluptatem libero nesciunt ad.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, nisi.</p>
+        <p>Découvrez les refuges dédiés au bien-être des animaux dans le Brabant Wallon grâce à cette carte interactive. Ces sanctuaires offrent un refuge sûr pour une variété d'animaux, leur procurant soins, sécurité et amour.</p><br>
+        <p>Chaque point sur la carte représente un lieu où des bénévoles dévoués et des professionnels travaillent ensemble pour offrir une seconde chance à des animaux maltraités, abandonnés ou en difficulté. </p><br>
+        <p>Explorez ces refuges où l'espoir renaît pour de nombreuses vies, et où vous pouvez contribuer à soutenir cette noble cause en offrant votre temps, votre aide ou simplement en partageant leur histoire.</p><br>
+        <p>Ensemble, nous pouvons faire une différence pour nos amis à fourrure et à plumes.</p>
     </article>
     <!-- /Article -->
   </div>
