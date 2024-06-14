@@ -86,18 +86,18 @@
         </ol>
     </nav>
 
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap md:flex-nowrap">
 
         <!-- Sidebar -->
-        <aside class="w-full md:w-1/3 lg:w-1/4 mb-4 md:mb-0">
+        <aside class="w-full md:w-1/3 lg:w-1/4 mb-4 md:mb-0 md:mr-4">
 
             <div class="bg-white p-4 rounded shadow mb-4">
                 <h4 class="font-bold mb-2">Remerciements</h4>
-                <p>Afin de mener à bien la créations de ce site web, différents site web ont été utilisés et nous tenons à leur apporter le crédit lié à leur travail.</p>
+                <p>Afin de mener à bien la création de ce site web, différents sites web ont été utilisés et nous tenons à leur apporter le crédit lié à leur travail.</p>
             </div>
             <div class="bg-white p-4 rounded shadow mb-4">
                 <h4 class="font-bold mb-2">Chats, chiens, lapins...</h4>
-                <img src="https://cdn.pixabay.com/photo/2017/08/07/12/35/cat-2603395_1280.jpg" alt="">
+                <img src="https://cdn.pixabay.com/photo/2017/08/07/12/35/cat-2603395_1280.jpg" alt="" class="rounded">
             </div>
 
         </aside>
@@ -111,20 +111,19 @@
                     <h1 class="text-2xl font-bold">Crédits</h1>
                 </header>
                 <h2 class="text-xl font-bold mt-4">Le template</h2>
-                <p>Le template utilisé lors de la créations du site Respons'adopt provient du site <a href="https://www.gettemplate.com">Gettemplates</a> et est libre d'usage professionnel. Nous remercions sincèrement son créateur pour le travail effectué. L'organisation et l'apparence des pages a été modifiée pour s'adapter à mon projet.</p>
-
+                <p>Le template utilisé lors de la création du site Respons'adopt provient du site <a href="https://www.gettemplate.com" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Gettemplates</a> et est libre d'usage professionnel. Nous remercions sincèrement son créateur pour le travail effectué. L'organisation et l'apparence des pages ont été modifiées pour s'adapter à mon projet.</p>
 
                 <h3 class="text-lg font-bold mt-4">Les images</h3>
-                <p>Les diverses images présentes sur le site, incluant le header qui se situe sur la page d'accueil, ont toutes été trouvée sur le site <a href="https://pixabay.com/">Pixabay</a> qui propose des images en libre usage professionnel.</p>
+                <p>Les diverses images présentes sur le site, incluant le header qui se situe sur la page d'accueil, ont toutes été trouvées sur le site <a href="https://pixabay.com/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Pixabay</a> qui propose des images en libre usage professionnel.</p>
                 <!--<p>La favicon utilisée à l'effigie de la tête de chat qui est visible sur les divers onglets du site a été prise sur <a href="https://favicon.io/emoji-favicons/cat-face/">Favicon</a>.</p>-->
-                <p>L'icon servant de marqueur dans la page "Refuges" a été trouvée sur le site de <a href="https://cdn-icons-png.flaticon.com/512/2229/2229675.png">Flaticon</a>.</p>
+                <p>L'icon servant de marqueur dans la page "Refuges" a été trouvée sur le site de <a href="https://cdn-icons-png.flaticon.com/512/2229/2229675.png" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Flaticon</a>.</p>
 
                 <h3 class="text-lg font-bold mt-4">Divers</h3>
-                <p>La carte provient du site <a href="https://leafletjs.com/">Leaflet</a> qui est une librairie JavaScript Opensource.</p>
-                <p>Afin de générer la palette de couleurs nécessaire à la construction du site, j'ai fais appel à <a href="https://toolki.com/fr/image-palette">Toolki</a></p>
-                <p>Toutes les fonts présentes sur le site proviennent du site <a href="https://fonts.google.com/">Google Font</a>.</p>
+                <p>La carte provient du site <a href="https://leafletjs.com/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Leaflet</a> qui est une librairie JavaScript Open Source.</p>
+                <p>Afin de générer la palette de couleurs nécessaire à la construction du site, j'ai fait appel à <a href="https://toolki.com/fr/image-palette" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Toolki</a>.</p>
+                <p>Toutes les fonts présentes sur le site proviennent du site <a href="https://fonts.google.com/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Google Font</a>.</p>
                 <br>
-                <p>Nous tenons donc à remercier chacun de ces sites web qui m'ont permise de mener à bien la création de mon site web.</p>
+                <p>Nous tenons donc à remercier chacun de ces sites web qui m'ont permis de mener à bien la création de mon site web.</p>
             </div>
 
         </article>
@@ -132,6 +131,7 @@
 
     </div>
 </div>
+
 <!-- /container -->
 
 <footer id="footer" class="bg-gray-900 text-white py-8 mt-8">
