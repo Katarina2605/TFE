@@ -57,10 +57,6 @@ Route::get('/messages', function () {
     return view('messages');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
-});
-
 Route::get('/contact', [ContactController::class, 'showForm']);
 Route::post('/contact', [ContactController::class, 'submitForm']);
 Route::get('/admin/messages', [ContactController::class, 'showMessages']);
