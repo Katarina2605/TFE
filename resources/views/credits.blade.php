@@ -98,7 +98,7 @@
             </div>
             <div class="bg-white p-4 rounded shadow mb-4">
                 <h4 class="font-bold mb-2">Merci pour votre contribution</h4>
-                <img src="https://images2.imgbox.com/12/c7/Q2V98jJy_o.jpgg" alt="" class="rounded">
+                <img src="https://images2.imgbox.com/12/c7/Q2V98jJy_o.jpg" alt="" class="rounded">
             </div>
 
         </aside>
@@ -114,11 +114,17 @@
                 <h2 class="text-xl font-bold mt-4">Le template</h2>
                 <p>Le template utilisé lors de la création du site Respons'adopt provient du site <a href="https://www.gettemplate.com" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Gettemplates</a> et est libre d'usage professionnel. Nous remercions sincèrement son créateur pour le travail effectué. L'organisation et l'apparence des pages ont été modifiées pour s'adapter à mon projet.</p>
 
-                <h3 class="text-lg font-bold mt-4">Les images</h3>
-                <p>Les diverses images présentes sur le site, incluant le header qui se situe sur la page d'accueil, ont toutes été trouvées sur le site <a href="https://pixabay.com/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Pixabay</a> qui propose des images en libre usage professionnel.</p>
+                <h3 class="text-lg font-bold mt-4">Les photos</h3>
+                <p>L'image de la page d'accueil, également présente dans les crédits, vient de chez <a href="https://pixabay.com/photos/dog-cat-pets-mammals-animals-2606759/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">StockSnap</a>.</p>
+                <p><a href="https://pixabay.com/fr/photos/bien-%c3%aatre-des-animaux-chien-1116203/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Cette image</a> et <a href="https://pixabay.com/fr/photos/bien-%c3%aatre-des-animaux-chien-1116205/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">celle-là</a>, utilisée dans la page "refuges", proviennent d'Alexas Fotos.</p>
+                <p>Dans la page législation se trouvent deux images qui proviennent de <a href="https://pixabay.com/fr/photos/marteau-ench%c3%a8res-droit-symbole-2492011/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Qimono</a> et de <a href="https://pixabay.com/fr/photos/chatons-refuge-pour-animaux-2789622/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Doanme</a></p>
+                <p>En ce qui concerne la page des mentions légales, les images sont de <a href="https://pixabay.com/fr/photos/taxes-consultant-fiscal-4326713/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Wal_172619</a> ainsi que de <a href="https://pixabay.com/fr/photos/lapin-bunny-animal-de-compagnie-373691/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">SimonaR</a>.</p>
+                <p>L'image de la page d'accueil, également présente dans les crédits, vient de chez <a href="https://pixabay.com/photos/dog-cat-pets-mammals-animals-2606759/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">StockSnap</a>.</p>
+
+                <h3 class="text-lg font-bold mt-4">Autres images</h3>
                 <!--<p>La favicon utilisée à l'effigie de la tête de chat qui est visible sur les divers onglets du site a été prise sur <a href="https://favicon.io/emoji-favicons/cat-face/">Favicon</a>.</p>-->
                 <p>L'icon servant de marqueur dans la page "Refuges" a été trouvée sur le site de <a href="https://cdn-icons-png.flaticon.com/512/2229/2229675.png" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Flaticon</a>.</p>
-                <p>Les icônes des réseaux sociaux proviennent de <<a href="https://icones8.fr/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Icônes8</a>.</p>
+                <p>Les icônes des réseaux sociaux proviennent de <a href="https://icones8.fr/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Icônes8</a>.</p>
                 <p>Les 4 icônes de la section "Les raisons de faire appel à nous" proviennent de Fontawesome.</p>
                 <h3 class="text-lg font-bold mt-4">Divers</h3>
                 <p>La carte provient du site <a href="https://leafletjs.com/" class="text-blue-500 underline hover:text-blue-700 transition duration-300">Leaflet</a> qui est une librairie JavaScript Open Source.</p>
