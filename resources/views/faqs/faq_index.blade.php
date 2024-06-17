@@ -25,7 +25,7 @@
 </div>
 
 <!-- FAQ -->
-<h2 class="text-center text-2xl font-semibold mb-6">Frequently Asked Questions</h2>
+<h2 class="text-center text-2xl font-semibold mb-6">Foire aux questions</h2>
 <div class="flex justify-center mb-6">
     <a href="{{ route('faqs.create') }}" class="btn bg-blue-500 hover:bg-blue-700 text-white px-3 py-2 rounded-md transition-colors">Add FAQ</a>
 </div>
@@ -35,11 +35,12 @@
             <h3 class="text-xl font-semibold mb-2">{{ $faq->question }}</h3>
             <p class="text-gray-700 mb-4">{{ $faq->answer }}</p>
             <div class="flex justify-end">
-                <a href="{{ route('faqs.edit', $faq->id) }}" class="btn btn-secondary mr-2">Edit</a>
+                <a href="{{ route('faqs.edit', $faq->id) }}" class="btn btn-secondary mr-2 bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 rounded">Éditer</a>
                 <form action="{{ route('faqs.destroy', $faq->id) }}" method="POST" style="display: inline;">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="btn btn-danger bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">Supprimer</button>
+
                 </form>
             </div>
         </div>

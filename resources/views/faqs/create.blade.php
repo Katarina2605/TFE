@@ -29,7 +29,7 @@
 
 @section('content')
     <div class="container mx-auto py-16">
-        <h2 class="text-center text-2xl font-semibold">Add a New FAQ</h2>
+        <h2 class="text-center text-2xl font-semibold">Ajouter une nouvelle question</h2>
         <br>
 
         <form action="{{ route('faqs.store') }}" method="POST">
@@ -39,11 +39,11 @@
                 <input type="text" name="question" id="question" class="w-full px-4 py-2 mt-2 border rounded-md">
             </div>
             <div class="mb-4">
-                <label for="answer" class="block text-gray-700">Answer</label>
+                <label for="answer" class="block text-gray-700">Réponse</label>
                 <textarea name="answer" id="answer" class="w-full px-4 py-2 mt-2 border rounded-md"></textarea>
             </div>
             <div class="mb-4">
-                <button type="submit" class="btn bg-blue-500 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition-colors">Add FAQ</button>
+                <button type="submit" class="btn bg-blue-500 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition-colors">Publier</button>
             </div>
         </form>
     </div>
