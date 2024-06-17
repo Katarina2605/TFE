@@ -9,8 +9,14 @@ class FAQController extends Controller
 {
     public function index()
     {
+
+        if (!auth()->check()) {
+            // Utilisateur non connecté, rediriger vers la page de connexion
+            return redirect()->route('login');
+        }
         $faqs = FAQ::all();
         return view('faqs.faq_index', compact('faqs'));
+
     }
 
     public function create()

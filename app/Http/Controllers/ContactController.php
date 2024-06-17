@@ -37,8 +37,16 @@ class ContactController extends Controller
 
     public function index()
     {
-        $contacts = Contact::all(); // Récupérez tous les contacts à partir du modèle Contact
+        // Vérifier si l'utilisateur est connecté
+        if (!auth()->check()) {
+            // Utilisateur non connecté, rediriger vers la page de connexion
+            return redirect()->route('login');
+        }
 
-        return view('messages', compact('contacts')); // Passez les contacts à la vue 'messages'
+        // Utilisateur connecté, récupérer tous les contacts
+        $contacts = Contact::all();
+
+        // Passer les contacts à la vue 'messages'
+        return view('messages', compact('contacts'));
     }
 }
