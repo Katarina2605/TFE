@@ -109,25 +109,25 @@
 <!-- Header -->
 <header id="head" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images2.imgbox.com/12/c7/Q2V98jJy_o.jpg');">
 
-    <div class="container mx-auto text-center">
+    <div class="container mx-auto text-center bg-gray-800 bg-opacity-50 shadow-md rounded-md p-6">
         <h1 class="text-4xl font-bold text-white">Respons'adopt</h1>
         <p class="text-lg text-gray-200 mt-4">Notre site aura pour but de vous aider à connaître les législatives concernant l'adoption d'un animal de façon légale et responsable..<br> Nous vous aiderons également à connaître les SPA les plus proches de chez vous.</p>
         <p class="mt-6">
             <a class="btn bg-blue-500 hover:bg-blue-700 text-white hover:text-white px-6 py-3 rounded-md inline-block transition-transform transform hover:scale-105" role="button" href="contact">
                 Nous contacter
             </a>
-
         </p>
-
     </div>
+
 </header>
 <!-- /Header -->
 
 <!-- Intro -->
-<div class="container mx-auto text-center py-8">
+<div class="container mx-auto text-center mt-8 py-8 bg-white shadow-md rounded-md p-6">
     <h2 class="text-2xl font-semibold">Pourquoi avoir créé ce site ?</h2>
     <p class="text-gray-700 mt-4">Nous avons créé ce site afin de faciliter les adoptions des animaux de compagnie au sein de la Wallonie. En effet, différentes lois existent à ce sujet.<br> Nôtre but est donc de vous informer un maximum, de mettre à vôtre disposition toutes les ressources nécessaires, mais également de vous permettre de savoir vers où vous tourner pour pouvoir adopter.</p>
 </div>
+
 <!-- /Intro-->
 
 <!-- Highlights -->
@@ -185,7 +185,7 @@
         <h2 class="text-center text-2xl font-semibold">Frequently Asked Questions</h2>
         <br>
 
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap bg-white shadow-md rounded-md p-6">
             @foreach($faqs as $faq)
                 <div class="w-full md:w-1/2 p-4">
                     <h3 class="text-xl font-semibold">{{ $faq->question }}</h3>
@@ -194,7 +194,7 @@
             @endforeach
         </div> <!-- /flex flex-wrap -->
 
-        <div class="bg-blue-100 py-8 px-4 mt-8 rounded-md">
+        <div class="bg-blue-100 py-8 px-4 mt-8 rounded-md bg-blue-100 shadow-md rounded-md p-6">
             <h4 class="text-center text-lg">Certaines questions restent en suspens ? Vous avez besoin de réponses supplémentaires afin de vous lancer dans une adoption ? N'hésitez surtout pas à prendre contact avec nous. Si votre question concerne un animal, le refuge concerné sera apte à répondre à vos questions.</h4>
             <p class="text-center mt-4">
                 <a class="btn bg-blue-500 hover:bg-blue-700 text-white hover:text-white px-6 py-3 rounded-md transition-colors" href="contact">
