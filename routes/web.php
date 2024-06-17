@@ -4,6 +4,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FAQController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -53,12 +54,21 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+/* GESTION DES MESSAGES */
 Route::get('/messages', function () {
     return view('messages');
 });
-
 Route::get('/contact', [ContactController::class, 'showForm']);
 Route::post('/contact', [ContactController::class, 'submitForm']);
 Route::get('/admin/messages', [ContactController::class, 'showMessages']);
 Route::get('/messages', [ContactController::class, 'index'])->name('messages.index');
+
+/*GESTION DE LA FAQ*/
+Route::get('/faqs', [FAQController::class, 'index'])->name('faqs.index');
+Route::get('/faqs/create', [FAQController::class, 'create'])->name('faqs.create');
+Route::post('/faqs', [FAQController::class, 'store'])->name('faqs.store');
+Route::get('/faqs/{faq}', [FAQController::class, 'show'])->name('faqs.show');
+Route::get('/faqs/{faq}/edit', [FAQController::class, 'edit'])->name('faqs.edit');
+Route::put('/faqs/{faq}', [FAQController::class, 'update'])->name('faqs.update');
+Route::delete('/faqs/{faq}', [FAQController::class, 'destroy'])->name('faqs.destroy');
 
