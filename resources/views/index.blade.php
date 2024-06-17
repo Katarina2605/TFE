@@ -51,13 +51,13 @@
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between py-3">
             <div class="flex items-center">
-                <a class="ml-4" href="index">
+                <a class="ml-4" href="/">
                     <img src="https://images2.imgbox.com/67/c5/KobvRJUU_o.png" alt="Respons'adopt logo" class="h-12">
                 </a>
             </div>
             <div class="md:flex md:items-center">
                 <ul class="hidden md:flex space-x-6">
-                    <li><a href="/index" class="hover:underline text-white">Accueil</a></li>
+                    <li><a href="/" class="hover:underline text-white">Accueil</a></li>
                     <li><a href="/refuges" class="hover:underline text-white">Refuges</a></li>
                     <li><a href="/legislations" class="hover:underline text-white">Législations</a></li>
                     <li><a href="/contact" class="hover:underline text-white">Contact</a></li>
@@ -82,7 +82,7 @@
             <!-- Menu déroulant pour les petites tailles d'écran -->
             <div id="mobile-menu" class="hidden md:hidden">
                 <ul class="flex flex-col mt-2 space-y-2">
-                    <li><a href="/index" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Accueil</a></li>
+                    <li><a href="/" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Accueil</a></li>
                     <li><a href="/refuges" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Refuges</a></li>
                     <li><a href="/legislations" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Législations</a></li>
                     <li><a href="/contact" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Contact</a></li>
@@ -124,14 +124,14 @@
 <!-- /Header -->
 
 <!-- Intro -->
-<div class="container mx-auto text-center py-16">
+<div class="container mx-auto text-center py-8">
     <h2 class="text-2xl font-semibold">Pourquoi avoir créé ce site ?</h2>
     <p class="text-gray-700 mt-4">Nous avons créé ce site afin de faciliter les adoptions des animaux de compagnie au sein de la Wallonie. En effet, différentes lois existent à ce sujet.<br> Nôtre but est donc de vous informer un maximum, de mettre à vôtre disposition toutes les ressources nécessaires, mais également de vous permettre de savoir vers où vous tourner pour pouvoir adopter.</p>
 </div>
 <!-- /Intro-->
 
 <!-- Highlights -->
-<div class="bg-gray-100 py-16">
+<div class="bg-gray-100 py-8">
     <div class="container mx-auto">
         <h3 class="text-center text-2xl font-semibold">Les raisons de faire appel à nous</h3>
 
@@ -139,10 +139,10 @@
             <div class="w-full md:w-1/4 p-4 flex-grow">
                 <div class="bg-white shadow-md rounded-md p-6 text-center h-full">
                     <div class="text-blue-500 mb-4">
-                        <i class="fa fa-location-arrow fa-2xl" aria-hidden="true"></i>
+                        <i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
                     </div>
                     <h4 class="font-semibold">Proche de chez vous</h4>
-                    <p class="mt-2">Grâce à notre page "refuges", vous aurez la possibilité de consulter les différents refuges présents au sein de la Wallonie pour pouvoir trouver facilement le refuge qui sera le plus proche de chez vous.</p>
+                    <p class="mt-2">Grâce à notre page "refuges", trouvez la liste des refuges les plus proches de chez vous.</p>
                 </div>
             </div>
             <div class="w-full md:w-1/4 p-4 flex-grow">
@@ -151,7 +151,7 @@
                         <i class="fa fa-plus fa-2x"></i>
                     </div>
                     <h4 class="font-semibold">Responsable</h4>
-                    <p class="mt-2">Une adoption se doit d'être un acte responsable. Via l'onglet "Législations", nous vous proposons de prendre connaissance des diverses lois qui sont d'application.</p>
+                    <p class="mt-2">Une adoption se doit d'être un acte responsable, prenez connaissance des diverses lois en un clic.</p>
                 </div>
             </div>
             <div class="w-full md:w-1/4 p-4 flex-grow">
@@ -160,7 +160,7 @@
                         <i class="fa fa-heart fa-2x"></i>
                     </div>
                     <h4 class="font-semibold">L'amour des animaux</h4>
-                    <p class="mt-2">Un animal est un engagement qui durera le long de sa vie mais qui vous donnera beaucoup d'amour. C'est un être humain à part entière et une adoption doit se prendre très au sérieux.</p>
+                    <p class="mt-2">Un animal est un engagement qui durera le long de sa vie mais qui vous donnera beaucoup d'amour.</p>
                 </div>
             </div>
             <div class="w-full md:w-1/4 p-4 flex-grow">
@@ -169,7 +169,7 @@
                         <i class="fa fa-handshake fa-2x" aria-hidden="true"></i>
                     </div>
                     <h4 class="font-semibold">Aider à sauver les animaux</h4>
-                    <p class="mt-2">Chaque année, beaucoup d'animaux subissent un abandon. Pourtant, sauver un animal équivaut à en sauver deux : un qui trouvera un nid douillet à vie et l'autre qui aura une place libre dans un refuge.</p>
+                    <p class="mt-2">Sauver un animal équivaut à en sauver deux : un qui trouvera un foyer à vie et l'autre qui aura une place libre dans un refuge.</p>
                 </div>
             </div>
         </div> <!-- /row  -->
@@ -178,44 +178,32 @@
 <!-- /Highlights -->
 
 <!-- container -->
-<div class="container mx-auto py-16">
-    <h2 class="text-center text-2xl font-semibold">Frequently Asked Questions</h2>
-    <br>
+@extends('layouts.app')
 
-    <div class="flex flex-wrap">
-        <div class="w-full md:w-1/2 p-4">
-            <h3 class="text-xl font-semibold">D'où est venue l'idée de ce site ?</h3>
-            <p class="text-gray-700 mt-2">Lors de recherche pour adopter un animal, j'ai pu me rendre à l'évidence qu'il était parfois compliqué d'accéder aux données nécessaires pou pouvoir se lancer dans l'adoption, notamment au niveau des lois. J'ai donc personnellement tenu à créer un site web regroupant toutes ces informations.</p>
+@section('content')
+    <main class="container mx-auto py-8">
+        <h2 class="text-center text-2xl font-semibold">Frequently Asked Questions</h2>
+        <br>
+
+        <div class="flex flex-wrap">
+            @foreach($faqs as $faq)
+                <div class="w-full md:w-1/2 p-4">
+                    <h3 class="text-xl font-semibold">{{ $faq->question }}</h3>
+                    <p class="text-gray-700 mt-2">{{ $faq->answer }}</p>
+                </div>
+            @endforeach
+        </div> <!-- /flex flex-wrap -->
+
+        <div class="bg-blue-100 py-8 px-4 mt-8 rounded-md">
+            <h4 class="text-center text-lg">Certaines questions restent en suspens ? Vous avez besoin de réponses supplémentaires afin de vous lancer dans une adoption ? N'hésitez surtout pas à prendre contact avec nous. Si votre question concerne un animal, le refuge concerné sera apte à répondre à vos questions.</h4>
+            <p class="text-center mt-4">
+                <a class="btn bg-blue-500 hover:bg-blue-700 text-white hover:text-white px-6 py-3 rounded-md transition-colors" href="contact">
+                    Contactez-nous »
+                </a>
+            </p>
         </div>
-        <div class="w-full md:w-1/2 p-4">
-            <h3 class="text-xl font-semibold">D'où proviennent les informations ?</h3>
-            <p class="text-gray-700 mt-2">Les diverses informations que vous pourrez retrouver dans la partie "législations" proviennent de sites officiels. La liste des refuges est aussi complètes que possible et ont été trouvés lors de recherches que j'ai pu effectuer.</p>
-        </div>
-    </div> <!-- /row -->
-
-    <div class="flex flex-wrap mt-8">
-        <div class="w-full md:w-1/2 p-4">
-            <h3 class="text-xl font-semibold">Pourquoi favoriser l'adoption ?</h3>
-            <p class="text-gray-700 mt-2">Favoriser l'adoption, c'est aussi donner une seconde chance à un animal qui n'en a pas beaucoup eu dans sa vie. C'est lui donner la possibilité de connaître l'amour, la chaleur d'un foyer tout en faisant les choses correctement d'un point de vue légal.</p>
-        </div>
-        <div class="w-full md:w-1/2 p-4">
-            <h3 class="text-xl font-semibold">Quels animaux puis-je trouver en refuge ?</h3>
-            <p class="text-gray-700 mt-2">Tout dépendra du refuge concerné. Certains vous proposeront des chiens, des chats, d'autres proposeront des lapins... Mais nous veillons à vous proposer un maximum de refuge, vous pourrez certainement y trouver vôtre bonheur.</p>
-        </div>
-    </div> <!-- /row -->
-
-    <div class="bg-blue-100 py-8 px-4 mt-8 rounded-md">
-        <h4 class="text-center text-lg">Certaines questions restent en suspens ? Vous avez besoin de réponses supplémentaires afin de vous lancer dans une adoption ? N'hésitez surtout pas à prendre contact avec nous. Si vôtre question concerne un animal, le refuge concerné sera apte à répondre à vos questions.</h4>
-        <p class="text-center mt-4">
-            <a class="btn bg-blue-500 hover:bg-blue-700 text-white hover:text-white px-6 py-3 rounded-md transition-colors" href="contact">
-                Contactez-nous »
-            </a>
-        </p>
-
-    </div>
-
-</div>	<!-- /container -->
-
+    </main>
+<!-- FIN CONTAINER -->
 <!-- Social links -->
 <section id="social" class="bg-gray-800 text-white py-8">
     <div class="container mx-auto text-center">

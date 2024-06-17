@@ -45,13 +45,13 @@ defineProps({
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between py-3">
                 <div class="flex items-center">
-                    <a class="ml-4" href="index">
+                    <a class="ml-4" href="/">
                         <img src="https://images2.imgbox.com/67/c5/KobvRJUU_o.png" alt="Respons'adopt logo" class="h-12">
                     </a>
                 </div>
                 <div class="hidden md:flex md:items-center">
                     <ul class="flex space-x-6">
-                        <li class="active"><a href="index" class="hover:underline">Accueil</a></li>
+                        <li class="active"><a href="/" class="hover:underline">Accueil</a></li>
                         <li><a href="refuges" class="hover:underline">Refuges</a></li>
                         <li><a href="legislations" class="hover:underline">Législations</a></li>
                         <li><a href="contact" class="hover:underline">Contact</a></li>
@@ -121,7 +121,7 @@ defineProps({
                             <i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
                         </div>
                         <h4 class="font-semibold">Proche de chez vous</h4>
-                        <p class="mt-2">Grâce à notre page "refuges", vous aurez la possibilité de consulter les différents refuges présents au sein de la Wallonie pour pouvoir trouver facilement le refuge qui sera le plus proche de chez vous.</p>
+                        <p class="mt-2">Grâce à notre page "refuges", trouvez la liste des refuges les plus proches de chez vous..</p>
                     </div>
                 </div>
                 <div class="w-full md:w-1/4 p-4 flex-grow">
@@ -157,43 +157,19 @@ defineProps({
     <!-- /Highlights -->
 
     <!-- container -->
-    <div class="container mx-auto py-16">
-        <h2 class="text-center text-2xl font-semibold">Frequently Asked Questions</h2>
-        <br>
-
-        <div class="flex flex-wrap">
-            <div class="w-full md:w-1/2 p-4">
-                <h3 class="text-xl font-semibold">D'où est venue l'idée de ce site ?</h3>
-                <p class="text-gray-700 mt-2">Lors de recherche pour adopter un animal, j'ai pu me rendre à l'évidence qu'il était parfois compliqué d'accéder aux données nécessaires pou pouvoir se lancer dans l'adoption, notamment au niveau des lois. J'ai donc personnellement tenu à créer un site web regroupant toutes ces informations.</p>
+    <template>
+        <div class="container">
+            <h2 class="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
+            <div v-if="loading">Chargement en cours...</div>
+            <div v-else>
+                <div v-for="faq in faqs" :key="faq.id" class="my-4">
+                    <h3 class="text-xl font-semibold">{{ faq.question }}</h3>
+                    <p class="text-gray-700 mt-2">{{ faq.answer }}</p>
+                </div>
             </div>
-            <div class="w-full md:w-1/2 p-4">
-                <h3 class="text-xl font-semibold">D'où proviennent les informations ?</h3>
-                <p class="text-gray-700 mt-2">Les diverses informations que vous pourrez retrouver dans la partie "législations" proviennent de sites officiels. La liste des refuges est aussi complètes que possible et ont été trouvés lors de recherches que j'ai pu effectuer.</p>
-            </div>
-        </div> <!-- /row -->
-
-        <div class="flex flex-wrap mt-8">
-            <div class="w-full md:w-1/2 p-4">
-                <h3 class="text-xl font-semibold">Pourquoi favoriser l'adoption ?</h3>
-                <p class="text-gray-700 mt-2">Favoriser l'adoption, c'est aussi donner une seconde chance à un animal qui n'en a pas beaucoup eu dans sa vie. C'est lui donner la possibilité de connaître l'amour, la chaleur d'un foyer tout en faisant les choses correctement d'un point de vue légal.</p>
-            </div>
-            <div class="w-full md:w-1/2 p-4">
-                <h3 class="text-xl font-semibold">Quels animaux puis-je trouver en refuge ?</h3>
-                <p class="text-gray-700 mt-2">Tout dépendra du refuge concerné. Certains vous proposeront des chiens, des chats, d'autres proposeront des lapins... Mais nous veillons à vous proposer un maximum de refuge, vous pourrez certainement y trouver vôtre bonheur.</p>
-            </div>
-        </div> <!-- /row -->
-
-        <div class="bg-blue-100 py-8 px-4 mt-8 rounded-md">
-            <h4 class="text-center text-lg">Certaines questions restent en suspens ? Vous avez besoin de réponses supplémentaires afin de vous lancer dans une adoption ? N'hésitez surtout pas à prendre contact avec nous. Si vôtre question concerne un animal, le refuge concerné sera apte à répondre à vos questions.</h4>
-            <p class="text-center mt-4">
-                <a class="btn bg-blue-500 hover:bg-blue-700 text-white hover:text-white px-6 py-3 rounded-md transition-colors" href="contact">
-                    Contactez-nous »
-                </a>
-            </p>
-
         </div>
+    </template>
 
-    </div>	<!-- /container -->
 
     <!-- Social links -->
     <section id="social" class="bg-gray-800 text-white py-8">

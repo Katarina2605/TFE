@@ -20,13 +20,13 @@
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between py-3">
             <div class="flex items-center">
-                <a class="ml-4" href="index">
+                <a class="ml-4" href="/">
                     <img src="https://images2.imgbox.com/67/c5/KobvRJUU_o.png" alt="Respons'adopt logo" class="h-12">
                 </a>
             </div>
             <div class="md:flex md:items-center">
                 <ul class="hidden md:flex space-x-6">
-                    <li><a href="/index" class="hover:underline text-white">Accueil</a></li>
+                    <li><a href="/" class="hover:underline text-white">Accueil</a></li>
                     <li><a href="/refuges" class="hover:underline text-white">Refuges</a></li>
                     <li><a href="/legislations" class="hover:underline text-white">Législations</a></li>
                     <li><a href="/contact" class="hover:underline text-white">Contact</a></li>
@@ -46,7 +46,7 @@
             <!-- Menu déroulant pour les petites tailles d'écran -->
             <div id="mobile-menu" class="hidden md:hidden">
                 <ul class="flex flex-col mt-2 space-y-2">
-                    <li><a href="/index" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Accueil</a></li>
+                    <li><a href="/" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Accueil</a></li>
                     <li><a href="/refuges" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Refuges</a></li>
                     <li><a href="/legislations" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Législations</a></li>
                     <li><a href="/contact" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Contact</a></li>
@@ -76,7 +76,7 @@
 
     <nav class="bg-white py-3 rounded mb-4 shadow">
         <ol class="list-reset flex">
-            <li class="ml-2"><a href="index" class="text-blue-500">Accueil</a></li>
+            <li class="ml-2"><a href="/" class="text-blue-500">Accueil</a></li>
             <li class="text-gray-500 mx-2">/</li>
             <li class="ml-2 text-gray-500">Contactez-nous</li>
         </ol>

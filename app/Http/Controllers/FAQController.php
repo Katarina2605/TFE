@@ -13,7 +13,6 @@ class FAQController extends Controller
         return view('faqs.faq_index', compact('faqs'));
     }
 
-
     public function create()
     {
         return view('faqs.create');
@@ -57,8 +56,9 @@ class FAQController extends Controller
         return redirect()->route('faqs.index')->with('success', 'FAQ deleted successfully.');
     }
 
-    public function apiIndex()
+    public function indexForIndexView()
     {
-        return FAQ::all();
+        $faqs = FAQ::all();
+        return view('index', compact('faqs'));
     }
 }

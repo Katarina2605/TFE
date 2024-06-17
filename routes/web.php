@@ -6,6 +6,7 @@ use Inertia\Inertia;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FAQController;
 
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
@@ -13,7 +14,10 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
+});
 
+Route::get('/', function () {
+    return view('welcome'); // Assurez-vous que 'welcome' correspond au nom de votre vue (welcome.vue)
 });
 
 Route::middleware([
@@ -72,3 +76,5 @@ Route::get('/faqs/{faq}/edit', [FAQController::class, 'edit'])->name('faqs.edit'
 Route::put('/faqs/{faq}', [FAQController::class, 'update'])->name('faqs.update');
 Route::delete('/faqs/{faq}', [FAQController::class, 'destroy'])->name('faqs.destroy');
 
+Route::get('/', [FAQController::class, 'indexForIndexView'])->name('index');
+Route::get('/api/faqs', [FAQController::class, 'apiIndex'])->name('faqs.apiIndex');
