@@ -296,10 +296,6 @@
             <div class="flex flex-wrap justify-between">
                 <div class="w-full md:w-1/2">
                     <p class="text-sm">
-                        <a href="index" class="hover:underline">Accueil</a> |
-                        <a href="contact" class="hover:underline">Contact</a> |
-                        <a href="legislations" class="hover:underline">Legislation</a> |
-                        <a href="refuges" class="hover:underline">Refuges</a> |
                         <a href="mentions" class="hover:underline">Mentions légales</a> |
                         <a href="credits" class="hover:underline">Crédits</a> |
                         <b><a href="login" class="hover:underline">Se connecter</a></b>
