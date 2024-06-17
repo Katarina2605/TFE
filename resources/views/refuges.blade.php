@@ -102,7 +102,7 @@
     </nav>
 
 
-    <body class="bg-gray-100">
+    <div class="bg-gray-100">
     <div class="container mx-auto my-4 flex flex-wrap -mx-4">
         <!-- Sidebar -->
         <aside class="w-full md:w-1/3 px-4">
@@ -186,6 +186,7 @@
         <!-- /Article main content -->
     </div>
     </div>
+</div>
 </body>
 
 <!-- FOOTER -->
@@ -247,8 +248,8 @@
             <div class="w-full md:w-1/3 px-4">
                 <h3 class="text-lg font-semibold">Quelques informations</h3>
                 <div class="mt-4">
-                    <p>Ce site web a été créé de manière purement bénévole et il a pour but de vous aider dans vos diverses démarches, reprenant en un seul site diverses informations importantes, la liste des refuges,...</p>
-                    <p>Afin de savoir d'où proviennent les sources, différents liens ont été intégrés au sein du site. Une page de crédit est également accessible afin de remercier tous les créateurs. Toute forme de plagiat du contenu du site, partielle ou complète, est formellement interdite.</p>
+                    <p>Ce site web a été créé bénévolement dans le but de faciliter vos démarches en regroupant diverses informations essentielles, y compris la liste des refuges.</p>
+                    <p>Le plagiat du contenu du site, que ce soit partiel ou total, est strictement interdit.</p>
                 </div>
             </div>
         </div>
@@ -256,10 +257,6 @@
             <div class="flex flex-wrap justify-between">
                 <div class="w-full md:w-1/2">
                     <p class="text-sm">
-                        <a href="index" class="hover:underline">Accueil</a> |
-                        <a href="contact" class="hover:underline">Contact</a> |
-                        <a href="legislations" class="hover:underline">Legislation</a> |
-                        <a href="refuges" class="hover:underline">Refuges</a> |
                         <a href="mentions" class="hover:underline">Mentions légales</a> |
                         <a href="credits" class="hover:underline">Crédits</a> |
                         <b><a href="login" class="hover:underline">Se connecter</a></b>
