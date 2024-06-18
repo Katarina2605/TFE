@@ -6,6 +6,7 @@ use Inertia\Inertia;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FAQController;
 
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
@@ -15,9 +16,19 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth:sanctum', 'verified'])->name('dashboard');
+Route::get('/', function () {
+    return view('welcome'); // Assurez-vous que 'welcome' correspond au nom de votre vue (welcome.vue)
+});
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return Inertia::render('Dashboard');
+    })->name('dashboard');
+});
 
 Route::get('/refuges', function () {
     return view('refuges');
@@ -43,15 +54,20 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-/* GESTION DES MESSAGES */
-Route::middleware('auth')->group(function () {
-    Route::get('/messages', [ContactController::class, 'index'])->name('messages.index');
-    Route::get('/admin/messages', [ContactController::class, 'showMessages']);
-    Route::get('/contact', [ContactController::class, 'showForm']);
-    Route::post('/contact', [ContactController::class, 'submitForm']);
+Route::get('/contact', function () {
+    return view('contact');
 });
 
-/* GESTION DE LA FAQ */
+/* GESTION DES MESSAGES */
+Route::get('/messages', function () {
+    return view('messages');
+});
+Route::get('/contact', [ContactController::class, 'showForm']);
+Route::post('/contact', [ContactController::class, 'submitForm']);
+Route::get('/admin/messages', [ContactController::class, 'showMessages']);
+Route::get('/messages', [ContactController::class, 'index'])->name('messages.index');
+
+/*GESTION DE LA FAQ*/
 Route::get('/faqs', [FAQController::class, 'index'])->name('faqs.index');
 Route::get('/faqs/create', [FAQController::class, 'create'])->name('faqs.create');
 Route::post('/faqs', [FAQController::class, 'store'])->name('faqs.store');

@@ -30,6 +30,7 @@
                     <li><a href="/refuges" class="hover:underline text-white">Refuges</a></li>
                     <li><a href="/legislations" class="hover:underline text-white">Législations</a></li>
                     <li><a href="/contact" class="hover:underline text-white">Contact</a></li>
+                    <li><a class="btn bg-blue-500 text-white px-3 py-2 rounded-md" href="/register">S'inscrire</a></li>
                 </ul>
             </div>
 
@@ -49,6 +50,7 @@
                     <li><a href="/refuges" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Refuges</a></li>
                     <li><a href="/legislations" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Législations</a></li>
                     <li><a href="/contact" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">Contact</a></li>
+                    <li><a href="/register" class="block px-4 py-2 text-sm text-white hover:text-black hover:bg-gray-100">S'inscrire</a></li>
                 </ul>
             </div>
 
@@ -137,10 +139,10 @@
             <div class="w-full md:w-1/3 px-4">
                 <h3 class="text-lg font-semibold">Contact</h3>
                 <div class="mt-4">
-                    <p>04 89 99 03 27<br>
+                    <p>010 22 20 26<br>
                         <a href="mailto:katarina.gerlage@ifosup.wavre.be">katarina.gerlage@ifosup.wavre.be</a><br>
                         <br>
-                        Viaducstraat 71, 3300 Tienen.
+                        Rue de la limite 6, 1300 Wavre.
                     </p>
                 </div>
             </div>
